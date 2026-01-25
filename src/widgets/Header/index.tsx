@@ -1,7 +1,7 @@
 import ThemeSwitcher from '@/features/ThemeSwitcher';
 import { NextLink } from '@/shared/ui';
 import { getTranslations } from 'next-intl/server';
-import AnimatedWraper from './AnimatedWraper';
+import HeaderWrapper from './header-wrapper.client';
 
 const navItems = [
   { titleKey: 'main', href: '#home' },
@@ -15,7 +15,7 @@ const Header = async () => {
   const t = await getTranslations();
 
   return (
-    <AnimatedWraper>
+    <HeaderWrapper>
       <div className="flex gap-4 w-fit m-auto items-center">
         {navItems.map((el) => (
           <NextLink key={el.titleKey} href={el.href}>
@@ -24,7 +24,7 @@ const Header = async () => {
         ))}
         <ThemeSwitcher />
       </div>
-    </AnimatedWraper>
+    </HeaderWrapper>
   );
 };
 export default Header;

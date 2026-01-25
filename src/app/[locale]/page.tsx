@@ -1,3 +1,9 @@
+import WelcomeSection from '@/widgets/WelcomeSection';
+
 export default function Home() {
-  return <div className=""></div>;
+  return (
+    <main className="">
+      <WelcomeSection />
+    </main>
+  );
 }
