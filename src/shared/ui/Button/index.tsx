@@ -6,7 +6,7 @@ type Props = {} & DetailedHTMLProps<
   HTMLButtonElement
 >;
 
-const Button = (props: Props) => {
-  return <button {...props} className={twMerge('cursor-pointer',props.className)}/>;
+const Button = ({ className, ...props }: Props) => {
+  return <button className={twMerge('cursor-pointer', className)} {...props} />;
 };
 export default Button;

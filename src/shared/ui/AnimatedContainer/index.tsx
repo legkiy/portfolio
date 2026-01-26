@@ -13,7 +13,7 @@ type Props<T extends ElementType = 'div'> = {
 export default function AnimatedContainer<
   T extends keyof JSX.IntrinsicElements = 'div',
 >({ tag, children, ref, ...rest }: Props<T>) {
-  const MotionTag = motion(tag ?? 'div') as React.ComponentType;
+  const MotionTag = motion.create(tag ?? 'div') as React.ComponentType;
 
   return (
     <MotionTag {...rest} ref={ref}>

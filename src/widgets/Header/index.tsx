@@ -2,13 +2,14 @@ import ThemeSwitcher from '@/features/ThemeSwitcher';
 import { NextLink } from '@/shared/ui';
 import { getTranslations } from 'next-intl/server';
 import HeaderWrapper from './header-wrapper.client';
+import ROUTER_CONFIG from '@/shared/models/router';
 
 const navItems = [
   { titleKey: 'main', href: '#home' },
-  { titleKey: 'about', href: '#about' },
-  { titleKey: 'skils', href: '#skills' },
-  { titleKey: 'projects', href: '#projects' },
-  { titleKey: 'contacts', href: '#contact' },
+  { titleKey: 'about', href: ROUTER_CONFIG.homeSections.about },
+  { titleKey: 'skills', href: ROUTER_CONFIG.homeSections.skills },
+  { titleKey: 'projects', href: ROUTER_CONFIG.homeSections.projects },
+  { titleKey: 'contacts', href: ROUTER_CONFIG.homeSections.contact },
 ];
 
 const Header = async () => {

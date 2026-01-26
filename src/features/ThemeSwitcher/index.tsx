@@ -3,6 +3,7 @@
 import { useTheme } from 'next-themes';
 import { Moon, Sun } from 'lucide-react';
 import { useLayoutEffect, useState } from 'react';
+import { Button } from '@/shared/ui';
 
 const THEMES_MAP = {
   dark: <Moon />,
@@ -37,7 +38,7 @@ const ThemeSwitcher = () => {
   };
 
   return (
-    <button onClick={handaleChangeTheme}>{THEMES_MAP[currentTheme]}</button>
+    <Button onClick={handaleChangeTheme}>{THEMES_MAP[currentTheme]}</Button>
   );
 };
 export default ThemeSwitcher;

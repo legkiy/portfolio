@@ -2,7 +2,7 @@ const RU = {
   sections: {
     main: 'Главная',
     about: 'О себе',
-    skils: 'Навыки',
+    skills: 'Навыки',
     projects: 'Проекты',
     contacts: 'Контакты',
   },

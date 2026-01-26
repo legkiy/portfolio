@@ -9,6 +9,7 @@
   --accent: #3b82f6;
   --accent-second: #8b5cf6;
   --line: #e5e7eb;
+  --border-line: #e5e7eb;
 }
 
 :root.dark {
@@ -20,6 +21,7 @@
   --accent: #60a5fa;
   --accent-second: #a78bfa;
   --line: #374151;
+  --border-line: #374151;
 }
 
 @theme inline {
@@ -31,6 +33,7 @@
   --color-accent: var(--accent);
   --color-accent-second: var(--accent-second);
   --color-line: var(--line);
+  --color-border-line: var(--border-line);
 
   --spacing-header-height: calc(
     var(--header-height) + calc(var(--spacing) * 4)
@@ -44,6 +47,10 @@ body {
   background: var(--bg);
   color: var(--fg);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 /* * {
   box-sizing: border-box;

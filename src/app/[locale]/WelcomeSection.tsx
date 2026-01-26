@@ -22,7 +22,6 @@ const itemVariants = {
 
 const WelcomeSection = () => {
   return (
-    // <section className="min-h-[calc(100dvh-(var(--spacing-header-height)))]">
     <AnimatedContainer
       tag="section"
       initial="hidden"
@@ -35,7 +34,7 @@ const WelcomeSection = () => {
         variants={itemVariants}
       >
         <AnimatedContainer
-          className={`absolute top-0 left-0 z-1 size-full mx-auto rounded-full p-1 bg-linear-to-r to-accent-second from-accent`}
+          className={`absolute top-0 left-0 z-1 size-full mx-auto rounded-full p-1 bg-linear-to-r to-accent-second from-accent animate-pulse`}
           whileHover={{ scale: 1.02, rotate: 360 }}
           transition={{ duration: 0.4 }}
         />
@@ -64,7 +63,6 @@ const WelcomeSection = () => {
         </AnimatedContainer>
       </div>
     </AnimatedContainer>
-    // </section>
   );
 };
 export default WelcomeSection;

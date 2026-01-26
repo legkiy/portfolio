@@ -35,15 +35,10 @@ const HeaderWrapper = ({ children }: Props) => {
         ref={ref}
         initial={{ y: -50 }}
         animate={{ y: 0 }}
-        className="sticky top-0 left-0 right-0 bg-bg-card/60 border-b border-line p-2 backdrop-blur-sm"
+        className="sticky top-0 left-0 right-0 z-auto bg-bg-card/60 border-b border-line p-2 backdrop-blur-sm"
       >
         {children}
       </AnimatedContainer>
-      {/* <div
-        style={{
-          height: headerSpace,
-        }}
-      /> */}
     </>
   );
 };
