@@ -13,7 +13,7 @@ const LevelsCard = ({ title, items }: Props) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.6, delay: 0.2 }}
-      className={`p-6 rounded-2xl bg-bg-card border border-line`}
+      className={`p-4 pb-6 rounded-2xl bg-bg-card border border-line`}
     >
       <h3 className={`text-2xl mb-6`}>{title}</h3>
       <div className="space-y-6">

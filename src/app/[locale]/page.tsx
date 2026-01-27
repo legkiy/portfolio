@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main>
       <WelcomeSection />
-      <div className="bg-bg-second pt-6 grid md:grid-cols-2 p-6">
+      <div className="bg-bg-second pt-6 grid md:grid-cols-2 gap-2 p-6">
         <AboutSection />
         <SkillsSection />
       </div>

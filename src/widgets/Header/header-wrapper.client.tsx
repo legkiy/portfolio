@@ -29,17 +29,15 @@ const HeaderWrapper = ({ children }: Props) => {
   }, []);
 
   return (
-    <>
-      <AnimatedContainer
-        tag="header"
-        ref={ref}
-        initial={{ y: -50 }}
-        animate={{ y: 0 }}
-        className="sticky top-0 left-0 right-0 z-auto bg-bg-card/60 border-b border-line p-2 backdrop-blur-sm"
-      >
-        {children}
-      </AnimatedContainer>
-    </>
+    <AnimatedContainer
+      tag="header"
+      ref={ref}
+      initial={{ y: -50 }}
+      animate={{ y: 0 }}
+      className="sticky top-0 left-0 right-0 z-10000 bg-bg-card/60 border-b border-line p-2 backdrop-blur-sm"
+    >
+      {children}
+    </AnimatedContainer>
   );
 };
 export default HeaderWrapper;

@@ -39,7 +39,7 @@ const SkillsSection = async () => {
         <h2 className="text-5xl ml-2 mb-4">{t('sections.skills')}</h2>
         <div className="w-50 h-1 bg-accent" />
       </AnimatedContainer>
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-2 gap-2">
         {skillCategories.map((category, index) => (
           <LevelsCard
             key={index}
