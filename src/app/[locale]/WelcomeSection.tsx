@@ -48,7 +48,7 @@ const WelcomeSection = () => {
         <AnimatedContainer
           tag="h1"
           variants={itemVariants}
-          className={`text-5xl md:text-7xl mb-4`}
+          className={`text-5xl md:text-7xl mb-4 text-center`}
         >
           Привет, я{' '}
           <span className="inline-block text-accent">Frontend Разработчик</span>
