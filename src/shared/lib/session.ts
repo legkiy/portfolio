@@ -27,7 +27,7 @@ export async function clearSession() {
   cks.delete('session');
 }
 
-export async function requireRoles(...roles: UserRole[]) {
+export async function requireRole(...roles: UserRole[]) {
   const session = await getSession();
 
   if (!session) throw new Error('Unauthorized');

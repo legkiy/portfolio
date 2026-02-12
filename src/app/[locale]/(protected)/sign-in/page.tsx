@@ -25,7 +25,7 @@ const LoginPage = () => {
       router.push({
         pathname: ROUTER_CONFIG.admin.root,
       });
-    } catch (error) {}
+    } catch {}
   }
 
   return (
