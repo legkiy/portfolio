@@ -8,7 +8,12 @@ async function seed() {
     role: UserRole.ADMIN,
   };
 
-  await UserService.create(adminUser);
+  try {
+    await UserService.create(adminUser);
+    console.log('User was success created ✅');
+  } catch (error) {
+    console.error('Error seeding database:', error);
+  }
 }
 
 seed();

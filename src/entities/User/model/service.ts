@@ -7,12 +7,24 @@ import bcrypt from 'bcryptjs';
 export class UserService {
   constructor() {}
 
-  async getById(uuid: string) {
+  static async getById(uuid: string) {
     return db.query.users.findFirst({
       where: eq(users.uuid, uuid),
+      columns: {
+        password: false,
+      },
     });
   }
-  async getByUsername(username: string) {
+  static async getByUsername(username: string) {
+    return db.query.users.findFirst({
+      where: eq(users.username, username),
+      columns: {
+        password: false,
+      },
+    });
+  }
+
+  static async getByUsernameForAuth(username: string) {
     return db.query.users.findFirst({
       where: eq(users.username, username),
     });
