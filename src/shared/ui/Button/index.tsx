@@ -1,5 +1,5 @@
+import { cn } from '@/shared/lib/utils';
 import { ButtonHTMLAttributes, DetailedHTMLProps } from 'react';
-import { twMerge } from 'tailwind-merge';
 
 type Props = {} & DetailedHTMLProps<
   ButtonHTMLAttributes<HTMLButtonElement>,
@@ -7,6 +7,6 @@ type Props = {} & DetailedHTMLProps<
 >;
 
 const Button = ({ className, ...props }: Props) => {
-  return <button className={twMerge('cursor-pointer', className)} {...props} />;
+  return <button className={cn('cursor-pointer', className)} {...props} />;
 };
 export default Button;

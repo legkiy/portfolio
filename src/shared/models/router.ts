@@ -4,10 +4,17 @@ class RouterService {
   home = '/';
 
   homeSections = {
-    about: '#about',
-    skills: '#skills',
-    projects: '#projects',
-    contact: '#contact',
+    home: '/#home',
+    about: '/#about',
+    skills: '/#skills',
+    projects: '/#projects',
+    contact: '/#contact',
+  };
+
+  signIn = '/sign-in';
+
+  admin = {
+    root: '/admin',
   };
 }
 
