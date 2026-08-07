@@ -1,0 +1,3247 @@
+{
+  "version": "2.15",
+  "children": [
+    {
+      "type": "frame",
+      "id": "zZLqF",
+      "x": 0,
+      "y": 0,
+      "name": "01 · Design tokens",
+      "clip": true,
+      "width": 1040,
+      "height": 1600,
+      "fill": "$surface/base",
+      "stroke": "$border/default",
+      "strokeWidth": 1,
+      "layout": "vertical",
+      "gap": 24,
+      "padding": 40,
+      "children": [
+        {
+          "type": "text",
+          "id": "g3hr7j",
+          "name": "Title",
+          "fill": "$text/primary",
+          "content": "01 · DESIGN TOKENS",
+          "fontFamily": "$font/display",
+          "fontSize": 32,
+          "fontWeight": "800"
+        },
+        {
+          "type": "text",
+          "id": "H49Yxy",
+          "name": "Subtitle",
+          "fill": "$text/secondary",
+          "content": "Signal / craft — semantic foundations · Light ↔ Dark",
+          "fontFamily": "$font/body",
+          "fontSize": 16,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "qVZkr",
+          "name": "Semantic color tokens",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 8,
+          "children": [
+            {
+              "type": "text",
+              "id": "O1aXmb",
+              "name": "Color heading",
+              "fill": "$accent/primary",
+              "content": "SEMANTIC COLOR / LIGHT → DARK",
+              "fontFamily": "$font/body",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "c7lufI",
+              "name": "surface/base",
+              "width": "fill_container",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "v9Q27",
+                  "name": "Token name",
+                  "fill": "$text/primary",
+                  "textGrowth": "fixed-width",
+                  "width": 230,
+                  "content": "surface/base",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "nPUhQ",
+                  "name": "Light swatch",
+                  "fill": "#FFFFFF",
+                  "width": 110,
+                  "height": 24,
+                  "stroke": "$border/default",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "Z2ijVW",
+                  "name": "Light value",
+                  "fill": "$text/secondary",
+                  "content": "#FFFFFF",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "ozYP9",
+                  "name": "Dark swatch",
+                  "fill": "#000000",
+                  "width": 110,
+                  "height": 24,
+                  "stroke": "$border/default",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "KubVz",
+                  "name": "Dark value",
+                  "fill": "$text/secondary",
+                  "content": "#000000",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "wLksU",
+              "name": "surface/raised",
+              "width": "fill_container",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ZlqKM",
+                  "name": "Token name",
+                  "fill": "$text/primary",
+                  "textGrowth": "fixed-width",
+                  "width": 230,
+                  "content": "surface/raised",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "iJ0rf",
+                  "name": "Light swatch",
+                  "fill": "#F4F4F2",
+                  "width": 110,
+                  "height": 24,
+                  "stroke": "$border/default",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "I6nneP",
+                  "name": "Light value",
+                  "fill": "$text/secondary",
+                  "content": "#F4F4F2",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "qhNKW",
+                  "name": "Dark swatch",
+                  "fill": "#111111",
+                  "width": 110,
+                  "height": 24,
+                  "stroke": "$border/default",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "LiKM1",
+                  "name": "Dark value",
+                  "fill": "$text/secondary",
+                  "content": "#111111",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "I67Pv1",
+              "name": "surface/subtle",
+              "width": "fill_container",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "P9SL9",
+                  "name": "Token name",
+                  "fill": "$text/primary",
+                  "textGrowth": "fixed-width",
+                  "width": 230,
+                  "content": "surface/subtle",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "IS72r",
+                  "name": "Light swatch",
+                  "fill": "#EBEBE8",
+                  "width": 110,
+                  "height": 24,
+                  "stroke": "$border/default",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "ABn68",
+                  "name": "Light value",
+                  "fill": "$text/secondary",
+                  "content": "#EBEBE8",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "ox4nl",
+                  "name": "Dark swatch",
+                  "fill": "#1A1A1A",
+                  "width": 110,
+                  "height": 24,
+                  "stroke": "$border/default",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "jBvGp",
+                  "name": "Dark value",
+                  "fill": "$text/secondary",
+                  "content": "#1A1A1A",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "nr8W4",
+              "name": "text/primary",
+              "width": "fill_container",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "GNpwA",
+                  "name": "Token name",
+                  "fill": "$text/primary",
+                  "textGrowth": "fixed-width",
+                  "width": 230,
+                  "content": "text/primary",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "L74cmJ",
+                  "name": "Light swatch",
+                  "fill": "#111111",
+                  "width": 110,
+                  "height": 24,
+                  "stroke": "$border/default",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "xINGI",
+                  "name": "Light value",
+                  "fill": "$text/secondary",
+                  "content": "#111111",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "JfORE",
+                  "name": "Dark swatch",
+                  "fill": "#F5F5F0",
+                  "width": 110,
+                  "height": 24,
+                  "stroke": "$border/default",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "Z0c9E9",
+                  "name": "Dark value",
+                  "fill": "$text/secondary",
+                  "content": "#F5F5F0",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Ca4n0",
+              "name": "text/secondary",
+              "width": "fill_container",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "k0SbG",
+                  "name": "Token name",
+                  "fill": "$text/primary",
+                  "textGrowth": "fixed-width",
+                  "width": 230,
+                  "content": "text/secondary",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "TY2k2",
+                  "name": "Light swatch",
+                  "fill": "#5B5B57",
+                  "width": 110,
+                  "height": 24,
+                  "stroke": "$border/default",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "rS51U",
+                  "name": "Light value",
+                  "fill": "$text/secondary",
+                  "content": "#5B5B57",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "YM3m0",
+                  "name": "Dark swatch",
+                  "fill": "#B2B2AA",
+                  "width": 110,
+                  "height": 24,
+                  "stroke": "$border/default",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "hAUlp",
+                  "name": "Dark value",
+                  "fill": "$text/secondary",
+                  "content": "#B2B2AA",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "VeNLw",
+              "name": "border/default",
+              "width": "fill_container",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "DZ6hv",
+                  "name": "Token name",
+                  "fill": "$text/primary",
+                  "textGrowth": "fixed-width",
+                  "width": 230,
+                  "content": "border/default",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "ZGu1L",
+                  "name": "Light swatch",
+                  "fill": "#D9D9D4",
+                  "width": 110,
+                  "height": 24,
+                  "stroke": "$border/default",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "Fw8xH",
+                  "name": "Light value",
+                  "fill": "$text/secondary",
+                  "content": "#D9D9D4",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "rp9g8",
+                  "name": "Dark swatch",
+                  "fill": "#30302D",
+                  "width": 110,
+                  "height": 24,
+                  "stroke": "$border/default",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "z4aWe",
+                  "name": "Dark value",
+                  "fill": "$text/secondary",
+                  "content": "#30302D",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "tWcqc",
+              "name": "accent/primary",
+              "width": "fill_container",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "emF7K",
+                  "name": "Token name",
+                  "fill": "$text/primary",
+                  "textGrowth": "fixed-width",
+                  "width": 230,
+                  "content": "accent/primary",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "c7EKQ",
+                  "name": "Light swatch",
+                  "fill": "#145CFF",
+                  "width": 110,
+                  "height": 24,
+                  "stroke": "$border/default",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "fhdm4",
+                  "name": "Light value",
+                  "fill": "$text/secondary",
+                  "content": "#145CFF",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "yvPQa",
+                  "name": "Dark swatch",
+                  "fill": "#145CFF",
+                  "width": 110,
+                  "height": 24,
+                  "stroke": "$border/default",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "TkrBY",
+                  "name": "Dark value",
+                  "fill": "$text/secondary",
+                  "content": "#145CFF",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "T23w32",
+              "name": "accent/secondary",
+              "width": "fill_container",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "KT8oy",
+                  "name": "Token name",
+                  "fill": "$text/primary",
+                  "textGrowth": "fixed-width",
+                  "width": 230,
+                  "content": "accent/secondary",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "CkbLt",
+                  "name": "Light swatch",
+                  "fill": "#E94E27",
+                  "width": 110,
+                  "height": 24,
+                  "stroke": "$border/default",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "hSVIm",
+                  "name": "Light value",
+                  "fill": "$text/secondary",
+                  "content": "#E94E27",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "NpfSI",
+                  "name": "Dark swatch",
+                  "fill": "#E94E27",
+                  "width": 110,
+                  "height": 24,
+                  "stroke": "$border/default",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "MZh62",
+                  "name": "Dark value",
+                  "fill": "$text/secondary",
+                  "content": "#E94E27",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "M2K7V",
+              "name": "status/success",
+              "width": "fill_container",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "bn1Hk",
+                  "name": "Token name",
+                  "fill": "$text/primary",
+                  "textGrowth": "fixed-width",
+                  "width": 230,
+                  "content": "status/success",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "rGdEa",
+                  "name": "Light swatch",
+                  "fill": "#16803C",
+                  "width": 110,
+                  "height": 24,
+                  "stroke": "$border/default",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "Y5k3he",
+                  "name": "Light value",
+                  "fill": "$text/secondary",
+                  "content": "#16803C",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "IfjLH",
+                  "name": "Dark swatch",
+                  "fill": "#16803C",
+                  "width": 110,
+                  "height": 24,
+                  "stroke": "$border/default",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "D7Wry4",
+                  "name": "Dark value",
+                  "fill": "$text/secondary",
+                  "content": "#16803C",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "i0EY31",
+              "name": "status/warning",
+              "width": "fill_container",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "rfHYk",
+                  "name": "Token name",
+                  "fill": "$text/primary",
+                  "textGrowth": "fixed-width",
+                  "width": 230,
+                  "content": "status/warning",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "NVGGp",
+                  "name": "Light swatch",
+                  "fill": "#A65F00",
+                  "width": 110,
+                  "height": 24,
+                  "stroke": "$border/default",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "icehi",
+                  "name": "Light value",
+                  "fill": "$text/secondary",
+                  "content": "#A65F00",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "fwNf5",
+                  "name": "Dark swatch",
+                  "fill": "#A65F00",
+                  "width": 110,
+                  "height": 24,
+                  "stroke": "$border/default",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "wwHNb",
+                  "name": "Dark value",
+                  "fill": "$text/secondary",
+                  "content": "#A65F00",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Zeept",
+              "name": "status/danger",
+              "width": "fill_container",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ZBteu",
+                  "name": "Token name",
+                  "fill": "$text/primary",
+                  "textGrowth": "fixed-width",
+                  "width": 230,
+                  "content": "status/danger",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "B4Qfzh",
+                  "name": "Light swatch",
+                  "fill": "#C92A2A",
+                  "width": 110,
+                  "height": 24,
+                  "stroke": "$border/default",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "c6fJc",
+                  "name": "Light value",
+                  "fill": "$text/secondary",
+                  "content": "#C92A2A",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "wmASB",
+                  "name": "Dark swatch",
+                  "fill": "#C92A2A",
+                  "width": 110,
+                  "height": 24,
+                  "stroke": "$border/default",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "PFstH",
+                  "name": "Dark value",
+                  "fill": "$text/secondary",
+                  "content": "#C92A2A",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Lp5H1",
+              "name": "focus/ring",
+              "width": "fill_container",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ikrHa",
+                  "name": "Token name",
+                  "fill": "$text/primary",
+                  "textGrowth": "fixed-width",
+                  "width": 230,
+                  "content": "focus/ring",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "FHiJH",
+                  "name": "Light swatch",
+                  "fill": "#145CFF",
+                  "width": 110,
+                  "height": 24,
+                  "stroke": "$border/default",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "MTqDm",
+                  "name": "Light value",
+                  "fill": "$text/secondary",
+                  "content": "#145CFF",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "bWpVG",
+                  "name": "Dark swatch",
+                  "fill": "#145CFF",
+                  "width": 110,
+                  "height": 24,
+                  "stroke": "$border/default",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "tXKAY",
+                  "name": "Dark value",
+                  "fill": "$text/secondary",
+                  "content": "#145CFF",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Z0XmN9",
+          "name": "System tokens",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "zRfZr",
+              "name": "System heading",
+              "fill": "$accent/primary",
+              "content": "TYPE · SPACE · RESPONSIVE · ELEVATION · MOTION",
+              "fontFamily": "$font/body",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "AD9dY",
+              "name": "Token documentation",
+              "fill": "$text/secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Typography  /  Archivo Black 800 display · Funnel Sans 400/500/600 body",
+              "fontFamily": "Funnel Sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "rz0yp",
+              "name": "Token documentation",
+              "fill": "$text/secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Spacing  /  4 · 8 · 12 · 16 · 24 · 32 · 48 · 64",
+              "fontFamily": "Funnel Sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "ezwRm",
+              "name": "Token documentation",
+              "fill": "$text/secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Containers  /  390 mobile · 768 tablet · 1280 desktop · 1248 content",
+              "fontFamily": "Funnel Sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "o1DjH",
+              "name": "Token documentation",
+              "fill": "$text/secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Radius  /  0 sharp · 4 subtle · 8 only tactile controls",
+              "fontFamily": "Funnel Sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "UC1Fu",
+              "name": "Token documentation",
+              "fill": "$text/secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Elevation  /  level 0 flat · level 1: 0 8 24 #00000014",
+              "fontFamily": "Funnel Sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "fLvQQ",
+              "name": "Token documentation",
+              "fill": "$text/secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Icons  /  16 compact · 20 control · 24 navigation",
+              "fontFamily": "Funnel Sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "oV0xJ",
+              "name": "Token documentation",
+              "fill": "$text/secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Opacity  /  disabled 42% · muted 64%",
+              "fontFamily": "Funnel Sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "YTYPC",
+              "name": "Token documentation",
+              "fill": "$text/secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Motion  /  160 fast · 320 standard · 600 reveal · ease-out-quint",
+              "fontFamily": "Funnel Sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "jnjFj",
+      "x": 1120,
+      "y": 0,
+      "name": "02 · Components",
+      "clip": true,
+      "width": 1120,
+      "height": 1600,
+      "fill": "$surface/base",
+      "stroke": "$border/default",
+      "strokeWidth": 1,
+      "layout": "vertical",
+      "gap": 24,
+      "padding": 40,
+      "children": [
+        {
+          "type": "text",
+          "id": "fRiO5",
+          "name": "Title",
+          "fill": "$text/primary",
+          "content": "02 · COMPONENTS",
+          "fontFamily": "$font/display",
+          "fontSize": 32,
+          "fontWeight": "800"
+        },
+        {
+          "type": "text",
+          "id": "t7fDYF",
+          "name": "Inventory note",
+          "fill": "$text/secondary",
+          "content": "Growing inventory — reserved lanes stay intentionally open.",
+          "fontFamily": "$font/body",
+          "fontSize": 16,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "UgWSv",
+          "name": "Interactive components",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 20,
+          "children": [
+            {
+              "type": "text",
+              "id": "FQ13X",
+              "name": "Interactive heading",
+              "fill": "$accent/primary",
+              "content": "INTERACTIVE / STATES",
+              "fontFamily": "Funnel Sans",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "NJbvy",
+              "name": "Button variants",
+              "width": "fill_container",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Cc0g2",
+                  "name": "Primary default",
+                  "height": 44,
+                  "fill": "$accent/primary",
+                  "cornerRadius": 4,
+                  "padding": [
+                    12,
+                    16
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "b9GvHB",
+                      "name": "Label",
+                      "fill": "#FFFFFF",
+                      "content": "Основное",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "lRE4I",
+                  "name": "Secondary hover",
+                  "height": 44,
+                  "fill": "$surface/raised",
+                  "cornerRadius": 4,
+                  "stroke": "$border/default",
+                  "strokeWidth": 1,
+                  "padding": [
+                    12,
+                    16
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "pr891",
+                      "name": "Label",
+                      "fill": "$text/primary",
+                      "content": "Вторичное",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "GfaT6",
+                  "name": "Ghost focus",
+                  "height": 44,
+                  "fill": "$surface/base",
+                  "cornerRadius": 4,
+                  "stroke": "$focus/ring",
+                  "strokeWidth": 1,
+                  "padding": [
+                    12,
+                    16
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "yBw9L",
+                      "name": "Label",
+                      "fill": "$text/primary",
+                      "content": "Фокус",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "O1hKL",
+                  "name": "Text pressed",
+                  "height": 44,
+                  "fill": "$surface/base",
+                  "cornerRadius": 4,
+                  "padding": [
+                    12,
+                    16
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "cyTmo",
+                      "name": "Label",
+                      "fill": "$text/primary",
+                      "content": "Текст →",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "m99ys",
+                  "name": "Disabled",
+                  "height": 44,
+                  "fill": "$surface/subtle",
+                  "cornerRadius": 4,
+                  "stroke": "$border/default",
+                  "strokeWidth": 1,
+                  "padding": [
+                    12,
+                    16
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "L7MU6",
+                      "name": "Label",
+                      "fill": "$text/primary",
+                      "content": "Недоступно",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ngpbC",
+                  "name": "Theme toggle icon-only",
+                  "width": 44,
+                  "height": 44,
+                  "fill": "$surface/raised",
+                  "cornerRadius": 4,
+                  "stroke": "$focus/ring",
+                  "strokeWidth": 2,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "u47dHR",
+                      "name": "Sun icon",
+                      "width": 20,
+                      "height": 20,
+                      "icon": "sun",
+                      "library": "lucide",
+                      "fill": "$text/primary"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "lHnjD",
+              "name": "Navigation links",
+              "width": "fill_container",
+              "gap": 24,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "S9plR8",
+                  "name": "Default",
+                  "layout": "vertical",
+                  "padding": [
+                    8,
+                    4
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "bS6vE",
+                      "name": "Link",
+                      "fill": "$text/secondary",
+                      "content": "Проекты",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Xn3wT",
+                  "name": "Hover",
+                  "layout": "vertical",
+                  "padding": [
+                    8,
+                    4
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "t0xws",
+                      "name": "Link",
+                      "fill": "$accent/primary",
+                      "content": "О себе",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "t9dHL",
+                  "name": "Active",
+                  "layout": "vertical",
+                  "padding": [
+                    8,
+                    4
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "qcmMk",
+                      "name": "Link",
+                      "fill": "$text/primary",
+                      "content": "Контакты",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "WluTf",
+                  "name": "Keyboard focus",
+                  "stroke": "$focus/ring",
+                  "strokeWidth": 2,
+                  "layout": "vertical",
+                  "padding": [
+                    8,
+                    4
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "altgd",
+                      "name": "Link",
+                      "fill": "$text/primary",
+                      "content": "Фокус",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "YANFX",
+              "name": "Language switcher",
+              "fill": "$surface/raised",
+              "cornerRadius": 4,
+              "stroke": "$border/default",
+              "strokeWidth": 1,
+              "gap": 2,
+              "padding": 4,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "d0vNoo",
+                  "name": "Russian active",
+                  "height": 44,
+                  "fill": "$text/primary",
+                  "cornerRadius": 4,
+                  "padding": [
+                    12,
+                    16
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dXLdY",
+                      "name": "Label",
+                      "fill": "$text/primary",
+                      "content": "RU",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "KpkHV",
+                  "name": "English",
+                  "height": 44,
+                  "fill": "$surface/raised",
+                  "cornerRadius": 4,
+                  "padding": [
+                    12,
+                    16
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "xyib6",
+                      "name": "Label",
+                      "fill": "$text/primary",
+                      "content": "EN",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "gPmrT",
+          "name": "Content components",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "buaC8",
+              "name": "Content heading",
+              "fill": "$accent/primary",
+              "content": "CONTENT / PROJECTS",
+              "fontFamily": "Funnel Sans",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "hQQ09",
+              "name": "Tags and links",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "VAQNz",
+                  "name": "Project tag React",
+                  "fill": "$surface/subtle",
+                  "cornerRadius": 4,
+                  "padding": [
+                    6,
+                    10
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "NAOE5",
+                      "name": "Tag label",
+                      "fill": "$text/primary",
+                      "content": "React",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "VURob",
+                  "name": "Project tag TypeScript",
+                  "fill": "$surface/subtle",
+                  "cornerRadius": 4,
+                  "padding": [
+                    6,
+                    10
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "XI6HT",
+                      "name": "Tag label",
+                      "fill": "$text/primary",
+                      "content": "TypeScript",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "mDIgG",
+                  "name": "Project tag Accessibility",
+                  "fill": "$surface/subtle",
+                  "cornerRadius": 4,
+                  "padding": [
+                    6,
+                    10
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "L88diC",
+                      "name": "Tag label",
+                      "fill": "$text/primary",
+                      "content": "Accessibility",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "JtvLv",
+                  "name": "Social link",
+                  "fill": "$text/primary",
+                  "content": "LinkedIn ↗",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "t7L6fO",
+                  "name": "Section label",
+                  "fill": "$accent/secondary",
+                  "content": "01 / Избранное",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "xnQwT",
+                  "name": "Text link",
+                  "fill": "$accent/primary",
+                  "content": "Все проекты →",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "RZ1DQ",
+              "name": "Project row / hover state",
+              "width": "fill_container",
+              "fill": "$surface/raised",
+              "stroke": "$focus/ring",
+              "strokeWidth": 1,
+              "gap": 20,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "y5YIe",
+                  "name": "Project image hover 1.03",
+                  "clip": true,
+                  "width": 370,
+                  "height": 170,
+                  "fill": "$surface/subtle",
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "vaQ3F",
+                      "name": "Image label",
+                      "fill": "$text/secondary",
+                      "content": "PRODUCT SCREENSHOT\nFinFlow",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Q5MJVd",
+                  "name": "Project metadata",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "EZISZ",
+                      "name": "Project title",
+                      "fill": "$text/primary",
+                      "content": "FinFlow  →",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 24,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "T8lLdl",
+                      "name": "Project role",
+                      "fill": "$text/secondary",
+                      "content": "Product frontend · 2024",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "B0QC0L",
+                      "name": "Project tech",
+                      "fill": "$text/secondary",
+                      "content": "Next.js · TypeScript · a11y",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "LHs99",
+                      "name": "Project outcome",
+                      "fill": "$text/primary",
+                      "content": "Сократили путь к платежу на 28%.",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "yk5lV",
+          "name": "Reserved component space",
+          "width": "fill_container",
+          "height": 180,
+          "fill": "$surface/base",
+          "stroke": "$border/default",
+          "strokeWidth": 1,
+          "layout": "vertical",
+          "gap": 8,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "J4vV0",
+              "name": "Reserved label",
+              "fill": "$text/secondary",
+              "content": "RESERVED FOR FUTURE COMPONENTS",
+              "fontFamily": "Funnel Sans",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "b4OT8",
+              "name": "Reserved note",
+              "fill": "$text/secondary",
+              "content": "Forms · dialogs · data states · navigation patterns",
+              "fontFamily": "Funnel Sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "gN9lI",
+      "x": 2320,
+      "y": 0,
+      "name": "03 · Home page",
+      "clip": true,
+      "width": 2920,
+      "height": 2500,
+      "fill": "#E5E5E1",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "BFlIe",
+          "x": 30,
+          "y": 50,
+          "name": "Light desktop · 1440",
+          "theme": {
+            "mode": "light"
+          },
+          "clip": true,
+          "width": 1120,
+          "height": 2420,
+          "fill": "$surface/base",
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "h0f6dc",
+              "name": "Quiet sticky header",
+              "width": "fill_container",
+              "height": 76,
+              "stroke": "$border/default",
+              "strokeWidth": {
+                "bottom": 1
+              },
+              "padding": [
+                16,
+                40
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Lqrlp",
+                  "name": "Monogram",
+                  "fill": "$text/primary",
+                  "content": "АЛ.",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 18
+                },
+                {
+                  "type": "text",
+                  "id": "aIvyR",
+                  "name": "Navigation",
+                  "fill": "$text/primary",
+                  "content": "Проекты    О себе    Контакты",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 14
+                },
+                {
+                  "type": "frame",
+                  "id": "gVEkJ",
+                  "name": "Header actions",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "MgYZD",
+                      "name": "Language",
+                      "fill": "$text/primary",
+                      "content": "RU / EN",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "text",
+                      "id": "qOe6f",
+                      "name": "Theme",
+                      "fill": "$text/primary",
+                      "content": "◐",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 20
+                    },
+                    {
+                      "type": "text",
+                      "id": "f5EjAy",
+                      "name": "Sign in",
+                      "fill": "$accent/primary",
+                      "content": "Войти →",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "hgoE9",
+              "name": "Hero",
+              "width": "fill_container",
+              "height": 530,
+              "layout": "vertical",
+              "gap": 18,
+              "padding": [
+                80,
+                72
+              ],
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ie9Ud",
+                  "name": "Eyebrow",
+                  "fill": "$accent/secondary",
+                  "content": "FRONTEND DEVELOPER · AVAILABLE FOR SELECT WORK",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 13
+                },
+                {
+                  "type": "text",
+                  "id": "R7PhfV",
+                  "name": "Name",
+                  "fill": "$text/primary",
+                  "textGrowth": "fixed-width",
+                  "width": 700,
+                  "content": "АЛЕКСЕЙ\nЛЕГКИЙ",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 82,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "r4FdW6",
+                  "name": "Promise",
+                  "fill": "$text/primary",
+                  "textGrowth": "fixed-width",
+                  "width": 620,
+                  "content": "Создаю интерфейсы,\nв которых сложное ощущается простым.",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 26
+                },
+                {
+                  "type": "text",
+                  "id": "IotEh",
+                  "name": "Status",
+                  "fill": "$status/success",
+                  "content": "● Открыт к новым продуктовым задачам",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 14
+                },
+                {
+                  "type": "frame",
+                  "id": "Y3FDat",
+                  "name": "Hero actions",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "REUWd",
+                      "name": "Primary CTA",
+                      "fill": "$accent/primary",
+                      "content": "Смотреть избранное →",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 16
+                    },
+                    {
+                      "type": "text",
+                      "id": "H1diD",
+                      "name": "Secondary CTA",
+                      "fill": "$text/primary",
+                      "content": "Написать",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 16
+                    },
+                    {
+                      "type": "text",
+                      "id": "EqsAR",
+                      "name": "Social links",
+                      "fill": "$text/secondary",
+                      "content": "GitHub · LinkedIn",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "N2ezB",
+              "name": "Capabilities strip",
+              "width": "fill_container",
+              "fill": "$surface/raised",
+              "gap": 28,
+              "padding": [
+                18,
+                72
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "WPvZE",
+                  "name": "Capability label",
+                  "fill": "$accent/secondary",
+                  "content": "В ФОКУСЕ",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 12
+                },
+                {
+                  "type": "text",
+                  "id": "UxABp",
+                  "name": "Capability items",
+                  "fill": "$text/primary",
+                  "content": "React    Next.js    TypeScript    Accessibility    Design systems",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 15
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "DJfMr",
+              "name": "Selected work",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 28,
+              "padding": [
+                60,
+                72
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "HIAy3",
+                  "name": "Work label",
+                  "fill": "$accent/secondary",
+                  "content": "01 / ИЗБРАННЫЕ ПРОЕКТЫ",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 13
+                },
+                {
+                  "type": "frame",
+                  "id": "PJN6U",
+                  "name": "FinFlow project",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "CPYVb",
+                      "name": "FinFlow product screenshot",
+                      "clip": true,
+                      "width": "fill_container",
+                      "height": 260,
+                      "fill": "$surface/subtle",
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "K2e8B",
+                          "name": "Screenshot placeholder",
+                          "fill": "$text/secondary",
+                          "content": "FinFlow\nproduct interface",
+                          "fontFamily": "Funnel Sans",
+                          "fontSize": 22
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "OBaJe",
+                      "name": "Project name",
+                      "fill": "$text/primary",
+                      "content": "FinFlow  →",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 30
+                    },
+                    {
+                      "type": "text",
+                      "id": "DINdZ",
+                      "name": "Project metadata",
+                      "fill": "$text/secondary",
+                      "content": "Lead frontend · 2024 · Next.js · TypeScript",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "text",
+                      "id": "Xzdr0",
+                      "name": "Project outcome",
+                      "fill": "$text/primary",
+                      "content": "Платёжный путь стал короче на 28%.",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 15
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Wn0nA",
+                  "name": "Secondary projects",
+                  "width": "fill_container",
+                  "gap": 26,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "yoP1K",
+                      "name": "Metrika column",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "lDkp8",
+                          "name": "Metrika project",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 12,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "cUnYB",
+                              "name": "Metrika product screenshot",
+                              "clip": true,
+                              "width": "fill_container",
+                              "height": 170,
+                              "fill": "$surface/subtle",
+                              "layout": "vertical",
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "h2oVVw",
+                                  "name": "Screenshot placeholder",
+                                  "fill": "$text/secondary",
+                                  "content": "Metrika\nproduct interface",
+                                  "fontFamily": "Funnel Sans",
+                                  "fontSize": 22
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "FjkZl",
+                              "name": "Project name",
+                              "fill": "$text/primary",
+                              "content": "Metrika  →",
+                              "fontFamily": "Funnel Sans",
+                              "fontSize": 30
+                            },
+                            {
+                              "type": "text",
+                              "id": "iO2Th",
+                              "name": "Project metadata",
+                              "fill": "$text/secondary",
+                              "content": "Frontend developer · 2023 · React · charts",
+                              "fontFamily": "Funnel Sans",
+                              "fontSize": 13
+                            },
+                            {
+                              "type": "text",
+                              "id": "PSd1Q",
+                              "name": "Project outcome",
+                              "fill": "$text/primary",
+                              "content": "Время до инсайта — минус 40%.",
+                              "fontFamily": "Funnel Sans",
+                              "fontSize": 15
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "c1yPz2",
+                      "name": "CareSpace column",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "aZktt",
+                          "name": "CareSpace project",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 12,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "FG3v7",
+                              "name": "CareSpace product screenshot",
+                              "clip": true,
+                              "width": "fill_container",
+                              "height": 170,
+                              "fill": "$surface/subtle",
+                              "layout": "vertical",
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "t2fVrv",
+                                  "name": "Screenshot placeholder",
+                                  "fill": "$text/secondary",
+                                  "content": "CareSpace\nproduct interface",
+                                  "fontFamily": "Funnel Sans",
+                                  "fontSize": 22
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "mrJhQ",
+                              "name": "Project name",
+                              "fill": "$text/primary",
+                              "content": "CareSpace  →",
+                              "fontFamily": "Funnel Sans",
+                              "fontSize": 30
+                            },
+                            {
+                              "type": "text",
+                              "id": "SfjbG",
+                              "name": "Project metadata",
+                              "fill": "$text/secondary",
+                              "content": "UI engineer · 2024 · Next.js · a11y",
+                              "fontFamily": "Funnel Sans",
+                              "fontSize": 13
+                            },
+                            {
+                              "type": "text",
+                              "id": "aKdxg",
+                              "name": "Project outcome",
+                              "fill": "$text/primary",
+                              "content": "Поддержали пользователей в сложный момент.",
+                              "fontFamily": "Funnel Sans",
+                              "fontSize": 15
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "z2MHW3",
+              "name": "About and approach",
+              "width": "fill_container",
+              "gap": 60,
+              "padding": [
+                12,
+                72
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "P4tegf",
+                  "name": "About copy",
+                  "fill": "$text/primary",
+                  "textGrowth": "fixed-width",
+                  "width": 520,
+                  "content": "02 / ПОДХОД\n\nЯ соединяю ясную визуальную систему с инженерной дисциплиной — чтобы команда быстрее доставляла опыт, которому можно доверять.",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 21
+                },
+                {
+                  "type": "text",
+                  "id": "Cjhey",
+                  "name": "Timeline",
+                  "fill": "$text/secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 330,
+                  "content": "2024—сейчас  Независимый frontend\n2021—2024  Product team / интерфейсы\n2018—2021  Дизайн-системы",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 14
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "TN5QH",
+              "name": "What I bring",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 18,
+              "padding": [
+                52,
+                72
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "D2M1q4",
+                  "name": "Bring label",
+                  "fill": "$accent/secondary",
+                  "content": "03 / ЧТО ПРИНОШУ В КОМАНДУ",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 13
+                },
+                {
+                  "type": "text",
+                  "id": "bPh03",
+                  "name": "Bring statements",
+                  "fill": "$text/primary",
+                  "textGrowth": "fixed-width",
+                  "width": 900,
+                  "content": "Интерфейсное ремесло — точные решения, которые приятно использовать.\n\nНадёжные frontend-системы — компоненты, документация, предсказуемые релизы.\n\nДоступность и скорость — потому что опыт должен работать для всех.",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 20
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "YGp8n",
+              "name": "Contact",
+              "fill": "$text/primary",
+              "textGrowth": "fixed-width",
+              "width": 900,
+              "content": "Давайте сделаем следующий продукт яснее.\nhello@legkiy.dev  →   GitHub · LinkedIn",
+              "fontFamily": "Funnel Sans",
+              "fontSize": 22
+            },
+            {
+              "type": "text",
+              "id": "p4dvT",
+              "name": "Footer",
+              "fill": "$text/secondary",
+              "content": "© 2025 Алексей Легкий · Signal / craft.",
+              "fontFamily": "Funnel Sans",
+              "fontSize": 13
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "YFJRy",
+          "x": 1190,
+          "y": 50,
+          "name": "Dark desktop · 1440",
+          "theme": {
+            "mode": "dark"
+          },
+          "clip": true,
+          "width": 1120,
+          "height": 1950,
+          "fill": "$surface/base",
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "RzzjF",
+              "name": "Quiet sticky header",
+              "width": "fill_container",
+              "height": 76,
+              "stroke": "$border/default",
+              "strokeWidth": {
+                "bottom": 1
+              },
+              "padding": [
+                16,
+                40
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "InQCK",
+                  "name": "Monogram",
+                  "fill": "$text/primary",
+                  "content": "АЛ.",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 18
+                },
+                {
+                  "type": "text",
+                  "id": "JWY6O",
+                  "name": "Navigation",
+                  "fill": "$text/primary",
+                  "content": "Проекты    О себе    Контакты    RU / EN    ◐    Войти →",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 14
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "UHRf8",
+              "name": "Hero",
+              "width": "fill_container",
+              "height": 530,
+              "layout": "vertical",
+              "gap": 18,
+              "padding": [
+                80,
+                72
+              ],
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "bgV7Q",
+                  "name": "Eyebrow",
+                  "fill": "$accent/secondary",
+                  "content": "FRONTEND DEVELOPER · AVAILABLE",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 13
+                },
+                {
+                  "type": "text",
+                  "id": "l8QBR",
+                  "name": "Name",
+                  "fill": "$text/primary",
+                  "textGrowth": "fixed-width",
+                  "width": 700,
+                  "content": "АЛЕКСЕЙ\nЛЕГКИЙ",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 82,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "rrjga",
+                  "name": "Promise",
+                  "fill": "$text/primary",
+                  "textGrowth": "fixed-width",
+                  "width": 620,
+                  "content": "Создаю интерфейсы,\nв которых сложное ощущается простым.",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 26
+                },
+                {
+                  "type": "text",
+                  "id": "ZOpVl",
+                  "name": "Status",
+                  "fill": "$status/success",
+                  "content": "● Открыт к новым продуктовым задачам",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 14
+                },
+                {
+                  "type": "text",
+                  "id": "xsHDG",
+                  "name": "CTA",
+                  "fill": "$accent/primary",
+                  "content": "Смотреть избранное →   Написать",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 16
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "WeTCI",
+              "name": "Capabilities",
+              "fill": "$text/primary",
+              "textGrowth": "fixed-width",
+              "width": 950,
+              "content": "В ФОКУСЕ  ·  React    Next.js    TypeScript    Accessibility    Design Systems",
+              "fontFamily": "Funnel Sans",
+              "fontSize": 15
+            },
+            {
+              "type": "frame",
+              "id": "G1mQlU",
+              "name": "Selected work",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 28,
+              "padding": [
+                60,
+                72
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "w5Q4ub",
+                  "name": "Work label",
+                  "fill": "$accent/secondary",
+                  "content": "01 / ИЗБРАННЫЕ ПРОЕКТЫ",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 13
+                },
+                {
+                  "type": "frame",
+                  "id": "uBUq6",
+                  "name": "FinFlow project",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "T8Aqm",
+                      "name": "FinFlow product screenshot",
+                      "width": "fill_container",
+                      "height": 260,
+                      "fill": "$surface/subtle",
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "JB5LH",
+                          "name": "Screenshot placeholder",
+                          "fill": "$text/secondary",
+                          "content": "FinFlow\nproduct interface",
+                          "fontFamily": "Funnel Sans",
+                          "fontSize": 18
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "UK70A",
+                      "name": "Project title",
+                      "fill": "$text/primary",
+                      "content": "FinFlow  →",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 27
+                    },
+                    {
+                      "type": "text",
+                      "id": "OmCP1",
+                      "name": "Project metadata",
+                      "fill": "$text/secondary",
+                      "content": "Lead frontend · 2024 · Next.js · TypeScript",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "text",
+                      "id": "ovctq",
+                      "name": "Project outcome",
+                      "fill": "$text/primary",
+                      "content": "Платёжный путь стал короче на 28%.",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ULeFR",
+                  "name": "Metrika project",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "nyq5c",
+                      "name": "Metrika product screenshot",
+                      "width": "fill_container",
+                      "height": 150,
+                      "fill": "$surface/subtle",
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "wKJp7",
+                          "name": "Screenshot placeholder",
+                          "fill": "$text/secondary",
+                          "content": "Metrika\nproduct interface",
+                          "fontFamily": "Funnel Sans",
+                          "fontSize": 18
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "U3RGbg",
+                      "name": "Project title",
+                      "fill": "$text/primary",
+                      "content": "Metrika  →",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 27
+                    },
+                    {
+                      "type": "text",
+                      "id": "QXUcU",
+                      "name": "Project metadata",
+                      "fill": "$text/secondary",
+                      "content": "Frontend developer · 2023 · React · charts",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "text",
+                      "id": "hC1ha",
+                      "name": "Project outcome",
+                      "fill": "$text/primary",
+                      "content": "Время до инсайта — минус 40%.",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Zxfuf",
+                  "name": "CareSpace project",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ohrHy",
+                      "name": "CareSpace product screenshot",
+                      "width": "fill_container",
+                      "height": 150,
+                      "fill": "$surface/subtle",
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "nU1B2",
+                          "name": "Screenshot placeholder",
+                          "fill": "$text/secondary",
+                          "content": "CareSpace\nproduct interface",
+                          "fontFamily": "Funnel Sans",
+                          "fontSize": 18
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "z5TCA",
+                      "name": "Project title",
+                      "fill": "$text/primary",
+                      "content": "CareSpace  →",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 27
+                    },
+                    {
+                      "type": "text",
+                      "id": "yBfnp",
+                      "name": "Project metadata",
+                      "fill": "$text/secondary",
+                      "content": "UI engineer · 2024 · Next.js · a11y",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "text",
+                      "id": "Rx1Pr",
+                      "name": "Project outcome",
+                      "fill": "$text/primary",
+                      "content": "Поддержали пользователей в сложный момент.",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "YQPJZ",
+              "name": "Approach",
+              "fill": "$text/primary",
+              "textGrowth": "fixed-width",
+              "width": 900,
+              "content": "02 / ПОДХОД — Я соединяю ясную визуальную систему с инженерной дисциплиной.\n\n03 / В КОМАНДУ — ремесло интерфейсов · надёжные системы · доступность и скорость.",
+              "fontFamily": "Funnel Sans",
+              "fontSize": 20
+            },
+            {
+              "type": "text",
+              "id": "b59PsV",
+              "name": "Contact",
+              "fill": "$text/primary",
+              "textGrowth": "fixed-width",
+              "width": 900,
+              "content": "Давайте сделаем следующий продукт яснее.  hello@legkiy.dev →",
+              "fontFamily": "Funnel Sans",
+              "fontSize": 22
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "sECqh",
+          "x": 2330,
+          "y": 50,
+          "name": "Dark mobile · 390",
+          "theme": {
+            "mode": "dark"
+          },
+          "clip": true,
+          "width": 390,
+          "height": 1740,
+          "fill": "$surface/base",
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "zXSNS",
+              "name": "Quiet sticky header",
+              "width": "fill_container",
+              "height": 76,
+              "stroke": "$border/default",
+              "strokeWidth": {
+                "bottom": 1
+              },
+              "padding": [
+                16,
+                20
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "riZhD",
+                  "name": "Monogram",
+                  "fill": "$text/primary",
+                  "content": "АЛ.",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 18
+                },
+                {
+                  "type": "text",
+                  "id": "R6bg4",
+                  "name": "Mobile controls",
+                  "fill": "$text/primary",
+                  "content": "◐  Меню",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 14
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "XbS8V",
+              "name": "Mobile hero",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "padding": [
+                52,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "IgEVK",
+                  "name": "Eyebrow",
+                  "fill": "$accent/secondary",
+                  "content": "FRONTEND DEVELOPER",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 12
+                },
+                {
+                  "type": "text",
+                  "id": "UDLCR",
+                  "name": "Name",
+                  "fill": "$text/primary",
+                  "textGrowth": "fixed-width",
+                  "width": 350,
+                  "content": "АЛЕКСЕЙ\nЛЕГКИЙ",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 48,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "H1WFJ",
+                  "name": "Promise",
+                  "fill": "$text/primary",
+                  "textGrowth": "fixed-width",
+                  "width": 340,
+                  "content": "Создаю интерфейсы, в которых сложное ощущается простым.",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 21
+                },
+                {
+                  "type": "text",
+                  "id": "B8EC0",
+                  "name": "Status",
+                  "fill": "$status/success",
+                  "content": "● Открыт к новым задачам",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 14
+                },
+                {
+                  "type": "text",
+                  "id": "DlsLU",
+                  "name": "CTA",
+                  "fill": "$accent/primary",
+                  "content": "Смотреть избранное →",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 16
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "BQJIg",
+              "name": "Capabilities",
+              "fill": "$text/primary",
+              "textGrowth": "fixed-width",
+              "width": 350,
+              "content": "В ФОКУСЕ\nReact · Next.js · TypeScript\nAccessibility · Design Systems",
+              "fontFamily": "Funnel Sans",
+              "fontSize": 14
+            },
+            {
+              "type": "frame",
+              "id": "gLbCM",
+              "name": "Mobile work",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 28,
+              "padding": [
+                40,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "D6VC6b",
+                  "name": "Label",
+                  "fill": "$accent/secondary",
+                  "content": "01 / ИЗБРАННОЕ",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 12
+                },
+                {
+                  "type": "frame",
+                  "id": "GF1Mc",
+                  "name": "FinFlow project",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "cOpSr",
+                      "name": "FinFlow product screenshot",
+                      "width": "fill_container",
+                      "height": 156,
+                      "fill": "$surface/subtle",
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "NTQTQ",
+                          "name": "Screenshot placeholder",
+                          "fill": "$text/secondary",
+                          "content": "FinFlow\nproduct interface",
+                          "fontFamily": "Funnel Sans",
+                          "fontSize": 18
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "uItey",
+                      "name": "Project title",
+                      "fill": "$text/primary",
+                      "content": "FinFlow  →",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 27
+                    },
+                    {
+                      "type": "text",
+                      "id": "DcRGG",
+                      "name": "Project metadata",
+                      "fill": "$text/secondary",
+                      "content": "Lead frontend · 2024 · Next.js · TypeScript",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "text",
+                      "id": "sX9qj",
+                      "name": "Project outcome",
+                      "fill": "$text/primary",
+                      "content": "Платёжный путь стал короче на 28%.",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ZYiFi",
+                  "name": "Metrika project",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "i0PdiP",
+                      "name": "Metrika product screenshot",
+                      "width": "fill_container",
+                      "height": 156,
+                      "fill": "$surface/subtle",
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "RzfoZ",
+                          "name": "Screenshot placeholder",
+                          "fill": "$text/secondary",
+                          "content": "Metrika\nproduct interface",
+                          "fontFamily": "Funnel Sans",
+                          "fontSize": 18
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "VX8Yq",
+                      "name": "Project title",
+                      "fill": "$text/primary",
+                      "content": "Metrika  →",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 27
+                    },
+                    {
+                      "type": "text",
+                      "id": "N7TLd",
+                      "name": "Project metadata",
+                      "fill": "$text/secondary",
+                      "content": "Frontend developer · 2023 · React · charts",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "text",
+                      "id": "vitNS",
+                      "name": "Project outcome",
+                      "fill": "$text/primary",
+                      "content": "Время до инсайта — минус 40%.",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "leZYr",
+                  "name": "CareSpace project",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "w8T8D",
+                      "name": "CareSpace product screenshot",
+                      "width": "fill_container",
+                      "height": 156,
+                      "fill": "$surface/subtle",
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "zOjbM",
+                          "name": "Screenshot placeholder",
+                          "fill": "$text/secondary",
+                          "content": "CareSpace\nproduct interface",
+                          "fontFamily": "Funnel Sans",
+                          "fontSize": 18
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "MmZC2",
+                      "name": "Project title",
+                      "fill": "$text/primary",
+                      "content": "CareSpace  →",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 27
+                    },
+                    {
+                      "type": "text",
+                      "id": "K4PHL",
+                      "name": "Project metadata",
+                      "fill": "$text/secondary",
+                      "content": "UI engineer · 2024 · Next.js · a11y",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "text",
+                      "id": "pgdFi",
+                      "name": "Project outcome",
+                      "fill": "$text/primary",
+                      "content": "Поддержали пользователей в сложный момент.",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "HFD12",
+              "name": "Contact",
+              "fill": "$text/primary",
+              "textGrowth": "fixed-width",
+              "width": 350,
+              "content": "Давайте сделаем следующий продукт яснее.\nhello@legkiy.dev →\nGitHub · LinkedIn",
+              "fontFamily": "Funnel Sans",
+              "fontSize": 19
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "MtSh1",
+          "x": 2740,
+          "y": 50,
+          "name": "Motion & accessibility annotations",
+          "width": 150,
+          "height": 600,
+          "fill": "#FFFFFF",
+          "stroke": "#D9D9D4",
+          "strokeWidth": 1,
+          "layout": "vertical",
+          "gap": 12,
+          "padding": 14,
+          "children": [
+            {
+              "type": "text",
+              "id": "O6AN8",
+              "name": "Annotation",
+              "fill": "#145CFF",
+              "textGrowth": "fixed-width",
+              "width": 122,
+              "content": "MOTION",
+              "fontFamily": "Funnel Sans",
+              "fontSize": 11
+            },
+            {
+              "type": "text",
+              "id": "nXxkx",
+              "name": "Annotation",
+              "fill": "#111111",
+              "textGrowth": "fixed-width",
+              "width": 122,
+              "content": "Load: 40–80ms stagger · 500–650ms · ease-out-quint",
+              "fontFamily": "Funnel Sans",
+              "fontSize": 11
+            },
+            {
+              "type": "text",
+              "id": "ousgJ",
+              "name": "Annotation",
+              "fill": "#111111",
+              "textGrowth": "fixed-width",
+              "width": 122,
+              "content": "Hover: image 1.03 + crop · 300ms · arrow +4px",
+              "fontFamily": "Funnel Sans",
+              "fontSize": 11
+            },
+            {
+              "type": "text",
+              "id": "p9kqDU",
+              "name": "Annotation",
+              "fill": "#111111",
+              "textGrowth": "fixed-width",
+              "width": 122,
+              "content": "Nav/theme: color + opacity 160–220ms",
+              "fontFamily": "Funnel Sans",
+              "fontSize": 11
+            },
+            {
+              "type": "text",
+              "id": "g2bVi",
+              "name": "Annotation",
+              "fill": "#145CFF",
+              "textGrowth": "fixed-width",
+              "width": 122,
+              "content": "REDUCED MOTION: instant; no transform",
+              "fontFamily": "Funnel Sans",
+              "fontSize": 11
+            },
+            {
+              "type": "text",
+              "id": "ZpNDf",
+              "name": "Annotation",
+              "fill": "#145CFF",
+              "textGrowth": "fixed-width",
+              "width": 122,
+              "content": "A11Y: AA contrast · visible focus · 44px targets",
+              "fontFamily": "Funnel Sans",
+              "fontSize": 11
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "themes": {
+    "mode": [
+      "light",
+      "dark"
+    ]
+  },
+  "variables": {
+    "surface": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#F4F0EA",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#101114",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "panel": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FFFFFF",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#17191E",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "ink": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#17191E",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#F5F2EC",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "muted": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#5D626D",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#B9BDC5",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "line": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#D7D2CA",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#30333B",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "cobalt": {
+      "type": "color",
+      "value": "#1749D1"
+    },
+    "vermilion": {
+      "type": "color",
+      "value": "#D94B32"
+    },
+    "focus": {
+      "type": "color",
+      "value": "#F5B700"
+    },
+    "font-display": {
+      "type": "string",
+      "value": "Funnel Sans"
+    },
+    "font-body": {
+      "type": "string",
+      "value": "Geist"
+    },
+    "font-mono": {
+      "type": "string",
+      "value": "IBM Plex Mono"
+    },
+    "s8": {
+      "type": "number",
+      "value": 8
+    },
+    "s16": {
+      "type": "number",
+      "value": 16
+    },
+    "s24": {
+      "type": "number",
+      "value": 24
+    },
+    "s32": {
+      "type": "number",
+      "value": 32
+    },
+    "r4": {
+      "type": "number",
+      "value": 4
+    },
+    "r8": {
+      "type": "number",
+      "value": 8
+    },
+    "surface/base": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FFFFFF",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#000000",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "surface/raised": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#F4F4F2",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#111111",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "surface/subtle": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#EBEBE8",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#1A1A1A",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "text/primary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#111111",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#F5F5F0",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "text/secondary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#5B5B57",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#B2B2AA",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "border/default": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#D9D9D4",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#30302D",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "accent/primary": {
+      "type": "color",
+      "value": "#145CFF"
+    },
+    "accent/secondary": {
+      "type": "color",
+      "value": "#E94E27"
+    },
+    "status/success": {
+      "type": "color",
+      "value": "#16803C"
+    },
+    "status/warning": {
+      "type": "color",
+      "value": "#A65F00"
+    },
+    "status/danger": {
+      "type": "color",
+      "value": "#C92A2A"
+    },
+    "focus/ring": {
+      "type": "color",
+      "value": "#145CFF"
+    },
+    "font/display": {
+      "type": "string",
+      "value": "Archivo Black"
+    },
+    "font/body": {
+      "type": "string",
+      "value": "Funnel Sans"
+    },
+    "space/1": {
+      "type": "number",
+      "value": 4
+    },
+    "space/2": {
+      "type": "number",
+      "value": 8
+    },
+    "space/3": {
+      "type": "number",
+      "value": 12
+    },
+    "space/4": {
+      "type": "number",
+      "value": 16
+    },
+    "space/6": {
+      "type": "number",
+      "value": 24
+    },
+    "space/8": {
+      "type": "number",
+      "value": 32
+    },
+    "space/12": {
+      "type": "number",
+      "value": 48
+    },
+    "radius/0": {
+      "type": "number",
+      "value": 0
+    },
+    "radius/1": {
+      "type": "number",
+      "value": 4
+    },
+    "radius/2": {
+      "type": "number",
+      "value": 8
+    },
+    "container/desktop": {
+      "type": "number",
+      "value": 1248
+    },
+    "breakpoint/mobile": {
+      "type": "number",
+      "value": 390
+    },
+    "breakpoint/tablet": {
+      "type": "number",
+      "value": 768
+    },
+    "breakpoint/desktop": {
+      "type": "number",
+      "value": 1280
+    },
+    "icon/sm": {
+      "type": "number",
+      "value": 16
+    },
+    "icon/md": {
+      "type": "number",
+      "value": 20
+    },
+    "opacity/disabled": {
+      "type": "number",
+      "value": 0.42
+    },
+    "motion/fast": {
+      "type": "number",
+      "value": 160
+    },
+    "motion/standard": {
+      "type": "number",
+      "value": 320
+    },
+    "ease/out-quint": {
+      "type": "string",
+      "value": "cubic-bezier(.22,1,.36,1)"
+    }
+  },
+  "fileToken": "6b177b31-131f-43d2-a246-6c9fbb70519e"
+}
