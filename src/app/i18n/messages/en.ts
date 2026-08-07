@@ -1,4 +1,4 @@
-import { Ru } from './ru';
+import type { Ru } from './ru';
 
 const en: Ru = {
   hello: 'Hello',

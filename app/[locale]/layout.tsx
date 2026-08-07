@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
-import '@app/styles/globals.css';
-import { NextIntlClientProvider } from 'next-intl';
+import { AppProviders } from '@/app/providers';
+import '@/app/styles/globals.css';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -29,7 +29,7 @@ export default async function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <AppProviders>{children}</AppProviders>
       </body>
     </html>
   );
