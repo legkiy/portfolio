@@ -1,15 +1,23 @@
 'use client';
 
+import { Button } from '@/shared/ui';
 import { useTheme } from 'next-themes';
 
 export const ThemeSwitcher = () => {
-  const { setTheme } = useTheme();
-  
+  const { setTheme, themes, theme } = useTheme();
+
   return (
-    <div>
-      <button onClick={() => setTheme('light')}>light</button>/
-      <button onClick={() => setTheme('dark')}>dark</button>/
-      <button onClick={() => setTheme('system')}>system</button>
+    <div className="flex gap-1">
+      {themes.map((el) => (
+        <Button
+          suppressHydrationWarning
+          key={el}
+          onClick={() => setTheme(el)}
+          disabled={!!(theme === el)}
+        >
+          {el}
+        </Button>
+      ))}
     </div>
   );
 };

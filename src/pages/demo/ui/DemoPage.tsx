@@ -7,7 +7,7 @@ function ArrowRightIcon() {
   return (
     <svg
       aria-hidden="true"
-      className="size-[15px]"
+      className="size-3.75"
       fill="none"
       viewBox="0 0 24 24"
     >
@@ -26,7 +26,7 @@ function TrashIcon() {
   return (
     <svg
       aria-hidden="true"
-      className="size-[15px]"
+      className="size-3.75"
       fill="none"
       viewBox="0 0 24 24"
     >
