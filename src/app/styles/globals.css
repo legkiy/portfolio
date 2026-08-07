@@ -119,6 +119,11 @@
   --font-heading: var(--font-geist-sans);
   --font-sans: Inter, sans-serif;
   --font-mono: 'IBM Plex Mono', monospace;
+
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1280px;
+
+  --container-max-page: 1424px;
   /* 
   --spacing-space-1: var(--token-space-1);
   --spacing-space-2: var(--token-space-2);

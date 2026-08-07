@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import { AppProviders } from '@/app/providers';
 import '@/app/styles/globals.css';
+import { ThemeSwitcher } from '@/features/theme-switcher';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -30,7 +31,10 @@ export default async function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col">
-        <AppProviders>{children}</AppProviders>
+        <AppProviders>
+          <ThemeSwitcher />
+          {children}
+        </AppProviders>
       </body>
     </html>
   );
