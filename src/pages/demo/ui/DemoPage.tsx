@@ -1,7 +1,8 @@
 import { notFound } from 'next/navigation';
 import type { ReactNode } from 'react';
 
-import { Button, Input } from '@/shared/ui';
+import { Button, TextField } from '@/shared/ui';
+
 
 function ArrowRightIcon() {
   return (
@@ -89,46 +90,33 @@ export const DemoPage = () => {
         </Button>
       </DemoSection>
 
-      <DemoSection title="INPUT / STATES">
+      <DemoSection title="TEXT FIELD / STATES">
         <div className="grid w-full max-w-2xl gap-4 sm:grid-cols-2">
-          <label className="flex flex-col gap-2 text-[13px] text-text">
-            Email
-            <Input
-              defaultValue="hello@example.com"
-              name="email-default"
-              type="email"
-            />
-            <span className="text-[12px] text-muted">
-              Стандартное состояние, нажмите Tab для проверки focus.
-            </span>
-          </label>
+          <TextField
+            defaultValue="hello@example.com"
+            hintText="Стандартное состояние, нажмите Tab для проверки focus."
+            label="Email"
+            name="email-default"
+            type="email"
+          />
 
-          <label className="flex flex-col gap-2 text-[13px] text-text">
-            Email
-            <Input
-              aria-describedby="demo-email-error"
-              defaultValue="hello@example"
-              name="email-error"
-              error
-              type="email"
-            />
-            <span className="text-[12px] text-danger" id="demo-email-error">
-              Укажите корректный email.
-            </span>
-          </label>
+          <TextField
+            defaultValue="hello@example"
+            error
+            hintText="Укажите корректный email."
+            label="Email"
+            name="email-error"
+            type="email"
+          />
 
-          <label className="flex flex-col gap-2 text-[13px] text-muted">
-            Email
-            <Input
-              defaultValue="hello@example.com"
-              disabled
-              name="email-disabled"
-              type="email"
-            />
-            <span className="text-[12px] text-muted">
-              Отключённое состояние.
-            </span>
-          </label>
+          <TextField
+            defaultValue="hello@example.com"
+            disabled
+            hintText="Отключённое состояние."
+            label="Email"
+            name="email-disabled"
+            type="email"
+          />
         </div>
       </DemoSection>
 
