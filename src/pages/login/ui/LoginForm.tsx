@@ -1,10 +1,12 @@
 'use client';
 
 import { zodResolver } from '@hookform/resolvers/zod';
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 
+import { authClient } from '@/shared/auth/client';
 import { EyeIcon, EyeSlashIcon } from '@/shared/icons';
 import { Button, TextField } from '@/shared/ui';
 
@@ -16,8 +18,9 @@ const loginSchema = z.object({
 type LoginFormValues = z.infer<typeof loginSchema>;
 
 export const LoginForm = () => {
-  const [submittedLogin, setSubmittedLogin] = useState<string | null>(null);
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
+  const router = useRouter();
   const {
     handleSubmit,
     register,
@@ -31,8 +34,23 @@ export const LoginForm = () => {
     resolver: zodResolver(loginSchema),
   });
 
-  const onSubmit = (data: LoginFormValues) => {
-    setSubmittedLogin(data.login);
+  const onSubmit = async (data: LoginFormValues) => {
+    setSubmitError(null);
+
+    const { error } = await authClient.signIn.username({
+      password: data.password,
+      username: data.login,
+    });
+
+    if (error) {
+      const message = 'Неверное имя пользователя или пароль.';
+
+      setSubmitError(message);
+      return;
+    }
+
+    router.replace('/dashboard');
+    router.refresh();
   };
 
   return (
@@ -76,9 +94,9 @@ export const LoginForm = () => {
       <Button fullWidth loading={isSubmitting} type="submit">
         Войти
       </Button>
-      {submittedLogin ? (
-        <p className="text-[13px] text-success" role="status">
-          Данные для «{submittedLogin}» прошли локальную проверку.
+      {submitError ? (
+        <p className="text-[13px] text-danger" role="alert">
+          {submitError}
         </p>
       ) : null}
     </form>

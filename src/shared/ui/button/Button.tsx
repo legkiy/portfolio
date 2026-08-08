@@ -22,6 +22,7 @@ const buttonVariants = cva(
         md: 'h-[42px] gap-[7px] px-[15px] text-[13px]',
         sm: 'h-8 gap-1.5 px-3 text-[12px]',
         icon: 'size-[42px] p-0',
+        'icon-sm': 'size-8 p-0',
       },
       fullWidth: {
         true: 'w-full',
