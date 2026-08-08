@@ -50,7 +50,7 @@ export const LoginForm = () => {
     }
 
     router.replace('/dashboard');
-    router.refresh();
+    // router.refresh();
   };
 
   return (
