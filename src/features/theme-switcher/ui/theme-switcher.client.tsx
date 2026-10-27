@@ -1,29 +1,25 @@
 'use client';
 
-import { ThemeHalf } from '@/shared/icons';
-import { Button } from '@/shared/ui';
+import { SunMoonIcon } from 'lucide-react';
 import { useTheme } from 'next-themes';
+
+import { Button } from '@/shared/ui';
 
 export const ThemeSwitcher = () => {
   const { setTheme, resolvedTheme } = useTheme();
 
   const handleOnChangeTheme = () => {
-    if (resolvedTheme === 'light') {
-      return setTheme('dark');
-    } else {
-      setTheme('light');
-    }
+    setTheme(resolvedTheme === 'light' ? 'dark' : 'light');
   };
 
   return (
-    <div className="flex gap-1">
-      <Button
-        size={'icon-sm'}
-        variant={'secondary'}
-        onClick={handleOnChangeTheme}
-      >
-        <ThemeHalf />
-      </Button>
-    </div>
+    <Button
+      aria-label="Переключить цветовую тему"
+      onClick={handleOnChangeTheme}
+      size="icon-sm"
+      variant="outline"
+    >
+      <SunMoonIcon aria-hidden="true" />
+    </Button>
   );
 };

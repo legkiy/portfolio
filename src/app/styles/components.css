@@ -1,8 +1,0 @@
-@import 'tailwindcss';
-
-@layer components {
-  .container-page {
-    max-width: 1200px;
-    margin-inline: auto;
-  }
-}

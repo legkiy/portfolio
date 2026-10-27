@@ -1,6 +1,2 @@
-import { FaEye, FaEyeSlash } from 'react-icons/fa6';
-import { FaCircleHalfStroke } from 'react-icons/fa6';
-
-export const EyeIcon = FaEye;
-export const EyeSlashIcon = FaEyeSlash;
-export const ThemeHalf = FaCircleHalfStroke;
+export { FaEye as EyeIcon, FaEyeSlash as EyeSlashIcon } from 'react-icons/fa6';
+export { FaCircleHalfStroke as ThemeHalf } from 'react-icons/fa6';
