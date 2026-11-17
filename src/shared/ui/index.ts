@@ -3,7 +3,6 @@ export { Badge, badgeVariants } from './badge';
 export { Button, buttonVariants } from './button';
 export {
   Card,
-  CardAction,
   CardContent,
   CardDescription,
   CardFooter,

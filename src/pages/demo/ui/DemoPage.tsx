@@ -15,7 +15,6 @@ import {
   Badge,
   Button,
   Card,
-  CardAction,
   CardContent,
   CardDescription,
   CardFooter,
@@ -79,7 +78,7 @@ export const DemoPage = () => {
 
   return (
     <main className="mx-auto w-full max-w-6xl px-4 py-12 sm:px-6">
-      <div className="max-w-2xl space-y-4 pb-8">
+      {/* <div className="max-w-2xl space-y-4 pb-8">
         <Badge variant="secondary">Foundation</Badge>
         <div className="space-y-2">
           <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
@@ -90,7 +89,7 @@ export const DemoPage = () => {
             токенами, доступными состояниями и тёмной темой.
           </p>
         </div>
-      </div>
+      </div> */}
       <DemoSection
         description="Контейнеры для связанного содержимого и состояние загрузки."
         title="Карточки"
@@ -100,10 +99,6 @@ export const DemoPage = () => {
             <CardHeader>
               <CardTitle>CardTitle</CardTitle>
               <CardDescription>CardDescription</CardDescription>
-              <CardAction>
-                CardAction
-                <Badge variant="secondary">Badge</Badge>
-              </CardAction>
             </CardHeader>
             <CardContent>
               <p className="leading-relaxed text-muted-foreground">
@@ -112,15 +107,10 @@ export const DemoPage = () => {
                 CardContent CardContent CardContent
               </p>
             </CardContent>
-            <CardFooter>
-              CardFooter
-              <Button size="sm" variant="outline">
-                Button
-              </Button>
-            </CardFooter>
+            <CardFooter>CardFooter</CardFooter>
           </Card>
 
-          <Card aria-label="Загрузка карточки">
+          <Card>
             <CardHeader>
               <Skeleton className="h-5 w-2/3" />
               <Skeleton className="h-4 w-1/2" />
@@ -141,27 +131,22 @@ export const DemoPage = () => {
         title="Кнопки"
       >
         <div className="flex flex-wrap items-center gap-3">
-          <Button>
+          <Button variant={'primary'}>
             Продолжить
             <ArrowRightIcon data-icon="inline-end" />
-          </Button>
-          <Button variant="secondary">Вторичное</Button>
-          <Button variant="outline">Контурное</Button>
-          <Button variant="ghost">Тихое</Button>
-          <Button variant="destructive">
-            <TrashIcon data-icon="inline-start" />
-            Удалить
-          </Button>
-          <Button disabled>
-            <Spinner data-icon="inline-start" />
-            Сохранение…
           </Button>
           <Button
             aria-label="Открыть следующий проект"
             size="icon"
-            variant="outline"
+            variant="primary"
           >
             <ArrowRightIcon />
+          </Button>
+          <Button variant="secondary">Вторичное</Button>
+          <Button variant="text">text</Button>
+          <Button disabled variant={'secondary'}>
+            <Spinner data-icon="inline-start" />
+            Сохранение…
           </Button>
         </div>
       </DemoSection>

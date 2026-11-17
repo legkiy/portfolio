@@ -11,7 +11,7 @@
   --text: #252332;
   --muted: #666371;
   --mint: #49435e;
-  --glass-tint: #ffffff85;
+  --glass-tint: #ffffff25;
   --glass-top: #29243b0c;
   --glass-bottom: #ffffff24;
   --shadow-soft: #31234712;
@@ -35,6 +35,20 @@
   --violet-glow-fade: #e1cfef59;
   --focus-ring: #75648d;
   --disabled-text: #96919e;
+  /* Pencil stores ellipse diameters; CSS radial gradients use radii. */
+  --page-background:
+    radial-gradient(
+      ellipse 80% 75% at 94% 8% in srgb,
+      var(--violet-glow) 0%,
+      var(--violet-glow-fade) 45%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 90% 80% at 8% 2% in srgb,
+      var(--blue-glow) 0%,
+      var(--blue-glow-fade) 45%,
+      transparent 100%
+    );
 }
 
 .dark {
@@ -44,7 +58,7 @@
   --text: #f4f4f7;
   --muted: #a7a7b3;
   --mint: #e8e7f2;
-  --glass-tint: #15151c38;
+  --glass-tint: #15151c30;
   --glass-top: #ffffff0d;
   --glass-bottom: #ffffff03;
   --shadow-soft: #00000024;
@@ -68,6 +82,19 @@
   --violet-glow-fade: #58246435;
   --focus-ring: #bdb8de;
   --disabled-text: #777782;
+  --page-background:
+    radial-gradient(
+      ellipse 80% 75% at 86% -8% in srgb,
+      var(--violet-glow) 0%,
+      var(--violet-glow-fade) 46%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 90% 85% at 16% -10% in srgb,
+      var(--blue-glow) 0%,
+      var(--blue-glow-fade) 42%,
+      transparent 100%
+    );
 }
 
 @theme inline {
@@ -150,6 +177,8 @@
 
   body {
     @apply bg-bg;
+    background-image: var(--page-background);
+    background-repeat: no-repeat;
   }
 
   button:not(:disabled),
