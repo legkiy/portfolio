@@ -79,7 +79,7 @@ export const DemoPage = () => {
 
   return (
     <main className="mx-auto w-full max-w-6xl px-4 py-12 sm:px-6">
-      <header className="max-w-2xl space-y-4 pb-8">
+      <div className="max-w-2xl space-y-4 pb-8">
         <Badge variant="secondary">Foundation</Badge>
         <div className="space-y-2">
           <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
@@ -90,7 +90,49 @@ export const DemoPage = () => {
             токенами, доступными состояниями и тёмной темой.
           </p>
         </div>
-      </header>
+      </div>
+      <DemoSection
+        description="Контейнеры для связанного содержимого и состояние загрузки."
+        title="Карточки"
+      >
+        <div className="grid gap-4 lg:grid-cols-2">
+          <Card>
+            <CardHeader>
+              <CardTitle>CardTitle</CardTitle>
+              <CardDescription>CardDescription</CardDescription>
+              <CardAction>
+                CardAction
+                <Badge variant="secondary">Badge</Badge>
+              </CardAction>
+            </CardHeader>
+            <CardContent>
+              <p className="leading-relaxed text-muted-foreground">
+                CardContent CardContent CardContent CardContent CardContent
+                CardContent CardContent CardContent CardContent CardContent
+                CardContent CardContent CardContent
+              </p>
+            </CardContent>
+            <CardFooter>
+              CardFooter
+              <Button size="sm" variant="outline">
+                Button
+              </Button>
+            </CardFooter>
+          </Card>
+
+          <Card aria-label="Загрузка карточки">
+            <CardHeader>
+              <Skeleton className="h-5 w-2/3" />
+              <Skeleton className="h-4 w-1/2" />
+            </CardHeader>
+            <CardContent className="space-y-2">
+              <Skeleton className="h-4 w-full" />
+              <Skeleton className="h-4 w-5/6" />
+              <Skeleton className="h-4 w-2/3" />
+            </CardContent>
+          </Card>
+        </div>
+      </DemoSection>
 
       <Separator />
 
@@ -239,48 +281,6 @@ export const DemoPage = () => {
               Проверьте обязательные поля и повторите попытку.
             </AlertDescription>
           </Alert>
-        </div>
-      </DemoSection>
-
-      <Separator />
-
-      <DemoSection
-        description="Контейнеры для связанного содержимого и состояние загрузки."
-        title="Карточки"
-      >
-        <div className="grid gap-4 lg:grid-cols-2">
-          <Card>
-            <CardHeader>
-              <CardTitle>Проект портфолио</CardTitle>
-              <CardDescription>Обновлён несколько минут назад</CardDescription>
-              <CardAction>
-                <Badge variant="secondary">Черновик</Badge>
-              </CardAction>
-            </CardHeader>
-            <CardContent>
-              <p className="leading-relaxed text-muted-foreground">
-                Карточка объединяет заголовок, описание, действия и
-                дополнительный контент в предсказуемую композицию.
-              </p>
-            </CardContent>
-            <CardFooter>
-              <Button size="sm" variant="outline">
-                Открыть проект
-              </Button>
-            </CardFooter>
-          </Card>
-
-          <Card aria-label="Загрузка карточки">
-            <CardHeader>
-              <Skeleton className="h-5 w-2/3" />
-              <Skeleton className="h-4 w-1/2" />
-            </CardHeader>
-            <CardContent className="space-y-2">
-              <Skeleton className="h-4 w-full" />
-              <Skeleton className="h-4 w-5/6" />
-              <Skeleton className="h-4 w-2/3" />
-            </CardContent>
-          </Card>
         </div>
       </DemoSection>
 
