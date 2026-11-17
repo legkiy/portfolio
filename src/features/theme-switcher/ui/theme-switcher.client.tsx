@@ -1,6 +1,6 @@
 'use client';
 
-import { SunMoonIcon } from 'lucide-react';
+import { ThemeHalf } from '@/shared/icons';
 import { useTheme } from 'next-themes';
 
 import { Button } from '@/shared/ui';
@@ -19,7 +19,7 @@ export const ThemeSwitcher = () => {
       size="icon-sm"
       variant="outline"
     >
-      <SunMoonIcon aria-hidden="true" />
+      <ThemeHalf aria-hidden="true" />
     </Button>
   );
 };

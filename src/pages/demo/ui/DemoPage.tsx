@@ -3,8 +3,8 @@ import {
   ArrowRightIcon,
   InfoIcon,
   SearchIcon,
-  Trash2Icon,
-} from 'lucide-react';
+  TrashIcon,
+} from '@/shared/icons';
 import { notFound } from 'next/navigation';
 import type { ReactNode } from 'react';
 
@@ -65,7 +65,9 @@ function DemoSection({
     <section className="grid gap-6 py-8 md:grid-cols-[14rem_minmax(0,1fr)]">
       <div className="space-y-1.5">
         <h2 className="text-base font-semibold">{title}</h2>
-        <p className="text-sm leading-relaxed text-muted-foreground">{description}</p>
+        <p className="text-sm leading-relaxed text-muted-foreground">
+          {description}
+        </p>
       </div>
       <div className="min-w-0">{children}</div>
     </section>
@@ -84,8 +86,8 @@ export const DemoPage = () => {
             Базовые UI-примитивы
           </h1>
           <p className="text-base leading-relaxed text-muted-foreground">
-            Единый набор компонентов на shadcn и Radix UI с семантическими токенами,
-            доступными состояниями и тёмной темой.
+            Единый набор компонентов на shadcn и Radix UI с семантическими
+            токенами, доступными состояниями и тёмной темой.
           </p>
         </div>
       </header>
@@ -105,14 +107,18 @@ export const DemoPage = () => {
           <Button variant="outline">Контурное</Button>
           <Button variant="ghost">Тихое</Button>
           <Button variant="destructive">
-            <Trash2Icon data-icon="inline-start" />
+            <TrashIcon data-icon="inline-start" />
             Удалить
           </Button>
           <Button disabled>
             <Spinner data-icon="inline-start" />
             Сохранение…
           </Button>
-          <Button aria-label="Открыть следующий проект" size="icon" variant="outline">
+          <Button
+            aria-label="Открыть следующий проект"
+            size="icon"
+            variant="outline"
+          >
             <ArrowRightIcon />
           </Button>
         </div>
@@ -128,7 +134,9 @@ export const DemoPage = () => {
           <Field>
             <FieldLabel htmlFor="demo-title">Название проекта</FieldLabel>
             <Input id="demo-title" placeholder="Например, сервис аналитики" />
-            <FieldDescription>Короткое название, которое увидит пользователь.</FieldDescription>
+            <FieldDescription>
+              Короткое название, которое увидит пользователь.
+            </FieldDescription>
           </Field>
 
           <Field data-invalid>
@@ -196,7 +204,9 @@ export const DemoPage = () => {
             <Switch defaultChecked id="demo-notifications" />
             <div className="grid gap-1">
               <FieldLabel htmlFor="demo-notifications">Уведомления</FieldLabel>
-              <FieldDescription>Сообщать об изменениях статуса проекта.</FieldDescription>
+              <FieldDescription>
+                Сообщать об изменениях статуса проекта.
+              </FieldDescription>
             </div>
           </Field>
         </FieldGroup>
@@ -218,12 +228,16 @@ export const DemoPage = () => {
           <Alert>
             <InfoIcon />
             <AlertTitle>Изменения сохранены</AlertTitle>
-            <AlertDescription>Новая версия проекта уже доступна в черновиках.</AlertDescription>
+            <AlertDescription>
+              Новая версия проекта уже доступна в черновиках.
+            </AlertDescription>
           </Alert>
           <Alert variant="destructive">
             <AlertCircleIcon />
             <AlertTitle>Не удалось опубликовать</AlertTitle>
-            <AlertDescription>Проверьте обязательные поля и повторите попытку.</AlertDescription>
+            <AlertDescription>
+              Проверьте обязательные поля и повторите попытку.
+            </AlertDescription>
           </Alert>
         </div>
       </DemoSection>
@@ -245,8 +259,8 @@ export const DemoPage = () => {
             </CardHeader>
             <CardContent>
               <p className="leading-relaxed text-muted-foreground">
-                Карточка объединяет заголовок, описание, действия и дополнительный
-                контент в предсказуемую композицию.
+                Карточка объединяет заголовок, описание, действия и
+                дополнительный контент в предсказуемую композицию.
               </p>
             </CardContent>
             <CardFooter>
@@ -280,7 +294,10 @@ export const DemoPage = () => {
           <InputGroupAddon>
             <SearchIcon />
           </InputGroupAddon>
-          <InputGroupInput aria-label="Поиск проектов" placeholder="Найти проект…" />
+          <InputGroupInput
+            aria-label="Поиск проектов"
+            placeholder="Найти проект…"
+          />
         </InputGroup>
       </DemoSection>
     </main>
