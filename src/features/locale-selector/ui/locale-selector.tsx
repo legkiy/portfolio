@@ -1,11 +1,12 @@
 'use client';
 
-import { useTransition } from 'react';
+import { Fragment, useTransition } from 'react';
 import { useLocale } from 'next-intl';
 import { routing } from '@/shared/config';
 import { usePathname, useRouter } from '@/shared/lib/i18n';
 import { useParams } from 'next/navigation';
 import { Locale } from 'next-intl';
+import { Button } from '@/shared/ui';
 
 const LocaleSelector = () => {
   const router = useRouter();
@@ -14,33 +15,35 @@ const LocaleSelector = () => {
   const params = useParams();
   const locale = useLocale();
 
-  function onSelectChange(event: React.ChangeEvent<HTMLSelectElement>) {
-    const nextLocale = event.target.value as Locale;
+  function onSelectChange(value: Locale) {
     startTransition(() => {
       router.replace(
         // @ts-expect-error -- TypeScript will validate that only known `params`
         // are used in combination with a given `pathname`. Since the two will
         // always match for the current route, we can skip runtime checks.
         { pathname, params },
-        { locale: nextLocale },
+        { locale: value },
       );
     });
   }
 
   return (
-    <select
-      aria-label={locale === 'ru' ? 'Язык' : 'Language'}
-      aria-busy={isPending}
-      defaultValue={locale}
-      disabled={isPending}
-      onChange={onSelectChange}
-    >
-      {routing.locales.map((value) => (
-        <option key={value} value={value} lang={value}>
-          {value}
-        </option>
+    <div className="flex items-center gap-1">
+      {routing.locales.map((value, idx) => (
+        <Fragment key={value}>
+          <Button
+            lang={value}
+            disabled={isPending}
+            onClick={() => onSelectChange(value)}
+            variant={locale === value ? 'primary' : 'text'}
+            size={'icon-xs'}
+          >
+            {value.toUpperCase()}
+          </Button>
+          {idx === 0 && '/'}
+        </Fragment>
       ))}
-    </select>
+    </div>
   );
 };
 

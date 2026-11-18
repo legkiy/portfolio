@@ -4,9 +4,9 @@ import { LocaleSelector } from '@/features/locale-selector';
 export const Header = () => {
   return (
     <header className="">
-      <div className="mx-auto flex w-full max-w-7xl items-center justify-end px-4 py-3">
-        <LocaleSelector />
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-end px-4 py-3 gap-4">
         <ThemeSwitcher />
+        <LocaleSelector />
       </div>
     </header>
   );
