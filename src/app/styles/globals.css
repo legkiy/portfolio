@@ -35,6 +35,7 @@
   --violet-glow-fade: #e1cfef59;
   --focus-ring: #75648d;
   --disabled-text: #96919e;
+  --field-error: #ad354b;
   /* Pencil stores ellipse diameters; CSS radial gradients use radii. */
   --page-background:
     radial-gradient(
@@ -82,6 +83,7 @@
   --violet-glow-fade: #58246435;
   --focus-ring: #bdb8de;
   --disabled-text: #777782;
+  --field-error: #eca5af;
   --page-background:
     radial-gradient(
       ellipse 80% 75% at 86% -8% in srgb,
@@ -132,7 +134,7 @@
   --color-violet-glow-fade: var(--violet-glow-fade);
   --color-focus-ring: var(--focus-ring);
   --color-disabled-text: var(--disabled-text);
-
+  --color-field-error: var(--field-error);
   /* Spacing and radii from docs/design.pen (pixel values). */
   --spacing-0: 0px;
   --spacing-0\.5: 2px;

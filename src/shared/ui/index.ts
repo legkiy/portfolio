@@ -17,21 +17,9 @@ export {
   FieldError,
   FieldGroup,
   FieldLabel,
-  FieldLegend,
-  FieldSeparator,
-  FieldSet,
   FieldTitle,
 } from './field';
-export {
-  InputGroup,
-  InputGroupAddon,
-  InputGroupButton,
-  InputGroupInput,
-  InputGroupText,
-  InputGroupTextarea,
-} from './input-group';
 export { Input } from './input';
-export { Label } from './label';
 export {
   Select,
   SelectContent,

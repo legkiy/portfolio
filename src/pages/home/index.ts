@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-export { HomePage } from './ui/HomePage';
+export { HomePage } from './ui/home-page';
 
 export const metadata: Metadata = {
   title: 'Create Next App',

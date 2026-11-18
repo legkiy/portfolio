@@ -1,10 +1,4 @@
-import {
-  AlertCircleIcon,
-  ArrowRightIcon,
-  InfoIcon,
-  SearchIcon,
-  TrashIcon,
-} from '@/shared/icons';
+import { AlertCircleIcon, ArrowRightIcon, InfoIcon } from '@/shared/icons';
 import { notFound } from 'next/navigation';
 import type { ReactNode } from 'react';
 
@@ -27,10 +21,6 @@ import {
   FieldGroup,
   FieldLabel,
   Input,
-  InputGroup,
-  InputGroupAddon,
-  InputGroupInput,
-  InputGroupText,
   Select,
   SelectContent,
   SelectGroup,
@@ -78,18 +68,6 @@ export const DemoPage = () => {
 
   return (
     <main className="mx-auto w-full max-w-6xl px-4 py-12 sm:px-6">
-      {/* <div className="max-w-2xl space-y-4 pb-8">
-        <Badge variant="secondary">Foundation</Badge>
-        <div className="space-y-2">
-          <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-            Базовые UI-примитивы
-          </h1>
-          <p className="text-base leading-relaxed text-muted-foreground">
-            Единый набор компонентов на shadcn и Radix UI с семантическими
-            токенами, доступными состояниями и тёмной темой.
-          </p>
-        </div>
-      </div> */}
       <DemoSection
         description="Контейнеры для связанного содержимого и состояние загрузки."
         title="Карточки"
@@ -159,32 +137,26 @@ export const DemoPage = () => {
       >
         <FieldGroup className="max-w-xl">
           <Field>
-            <FieldLabel htmlFor="demo-title">Название проекта</FieldLabel>
-            <Input id="demo-title" placeholder="Например, сервис аналитики" />
+            <FieldLabel htmlFor="demo-title">
+              Название проекта
+              <Input id="demo-title" placeholder="Например, сервис аналитики" />
+            </FieldLabel>
             <FieldDescription>
               Короткое название, которое увидит пользователь.
             </FieldDescription>
           </Field>
 
-          <Field data-invalid>
-            <FieldLabel htmlFor="demo-email">Email</FieldLabel>
-            <Input
-              aria-invalid="true"
-              defaultValue="hello@example"
-              id="demo-email"
-              type="email"
-            />
-            <FieldError>Укажите корректный email.</FieldError>
-          </Field>
-
           <Field>
-            <FieldLabel htmlFor="demo-url">Адрес проекта</FieldLabel>
-            <InputGroup>
-              <InputGroupAddon>
-                <InputGroupText>https://</InputGroupText>
-              </InputGroupAddon>
-              <InputGroupInput id="demo-url" placeholder="example.com" />
-            </InputGroup>
+            <FieldLabel htmlFor="demo-email">
+              Email
+              <Input
+                error
+                defaultValue="hello@example"
+                id="demo-email"
+                type="email"
+              />
+            </FieldLabel>
+            <FieldError>Укажите корректный email.</FieldError>
           </Field>
 
           <Field>
@@ -267,23 +239,6 @@ export const DemoPage = () => {
             </AlertDescription>
           </Alert>
         </div>
-      </DemoSection>
-
-      <Separator />
-
-      <DemoSection
-        description="Пример составного поля без абсолютного позиционирования."
-        title="Поиск"
-      >
-        <InputGroup className="max-w-md">
-          <InputGroupAddon>
-            <SearchIcon />
-          </InputGroupAddon>
-          <InputGroupInput
-            aria-label="Поиск проектов"
-            placeholder="Найти проект…"
-          />
-        </InputGroup>
       </DemoSection>
     </main>
   );
