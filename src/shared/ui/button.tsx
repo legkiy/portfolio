@@ -5,7 +5,7 @@ import { cn } from '@/shared/lib/utils';
 const buttonVariants = cva(
   cn(
     'group/button inline-flex gap-3 shrink-0 items-center justify-center rounded-xl transition-colors',
-    'bg-clip-padding text-sm whitespace-nowrap',
+    'bg-clip-padding text-sm whitespace-nowrap cursor-pointer',
     'transition-all outline-none select-none',
     '[&_svg]:pointer-events-none [&_svg]:shrink-0',
     "[&_svg:not([class*='size-'])]:size-4",

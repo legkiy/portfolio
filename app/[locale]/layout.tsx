@@ -24,6 +24,7 @@ export default async function RootLayout({
   params,
 }: LayoutProps<'/[locale]'>) {
   const { locale } = await params;
+
   return (
     <html
       lang={locale}

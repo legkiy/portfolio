@@ -16,8 +16,8 @@ export const ThemeSwitcher = () => {
     <Button
       aria-label="Переключить цветовую тему"
       onClick={handleOnChangeTheme}
-      size="icon-sm"
-      variant="outline"
+      size="icon"
+      variant="text"
     >
       <ThemeHalf aria-hidden="true" />
     </Button>

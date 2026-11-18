@@ -1,11 +1,11 @@
 import type { PropsWithChildren } from 'react';
 import { NextIntlClientProvider } from 'next-intl';
-import { ThemeProvider } from 'next-themes';
+import { AppThemeProvider } from './theme-provider.client';
 
 export function AppProviders({ children }: PropsWithChildren) {
   return (
-    <ThemeProvider attribute="class">
+    <AppThemeProvider>
       <NextIntlClientProvider>{children}</NextIntlClientProvider>
-    </ThemeProvider>
+    </AppThemeProvider>
   );
 }
