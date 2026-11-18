@@ -11,7 +11,7 @@
   --text: #252332;
   --muted: #666371;
   --mint: #49435e;
-  --glass-tint: #ffffff25;
+  --glass-tint: #ffffff44;
   --glass-top: #29243b0c;
   --glass-bottom: #ffffff24;
   --shadow-soft: #31234712;
@@ -58,7 +58,7 @@
   --text: #f4f4f7;
   --muted: #a7a7b3;
   --mint: #e8e7f2;
-  --glass-tint: #15151c30;
+  --glass-tint: #15151c38;
   --glass-top: #ffffff0d;
   --glass-bottom: #ffffff03;
   --shadow-soft: #00000024;
@@ -169,6 +169,9 @@
   html,
   body {
     min-height: 100%;
+  }
+  body {
+    height: 100%;
   }
 
   html {
