@@ -60,7 +60,7 @@ function CardContent({ className, ...props }: React.ComponentProps<'div'>) {
     <div
       data-slot="card-content"
       className={cn(
-        'px-6 w-full',
+        'px-6 w-full flex-1',
         'group-[&:not(:has(>[data-slot=card-header]))]/card:pt-6',
         'group-[&:not(:has(>[data-slot=card-footer]))]/card:pb-6 ',
         className,

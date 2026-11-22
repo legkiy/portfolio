@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader } from '@/shared/ui';
+import { PassScene } from './pass-scene/client';
 
 export async function HomePage() {
   return (
@@ -16,7 +17,9 @@ export async function HomePage() {
       <div className="flex">
         <Card className="flex-1">
           <CardHeader>bage</CardHeader>
-          <CardContent>bage</CardContent>
+          <CardContent>
+            <PassScene />
+          </CardContent>
         </Card>
       </div>
       <div className="flex flex-col gap-4">
