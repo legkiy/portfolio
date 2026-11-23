@@ -1,7 +1,11 @@
+import { getTranslations } from 'next-intl/server';
+import { ContactSelector } from '@/features/contact-selector';
 import { Card, CardContent, CardHeader } from '@/shared/ui';
 import { PassScene } from './pass-scene/client';
 
 export async function HomePage() {
+  const t = await getTranslations();
+
   return (
     <main className="grid lg:grid-cols-[25%_45%_30%] gap-4 lg:px-8 lg:pb-8 px-4 pb-4 h-full">
       <div className="flex flex-col gap-4">
@@ -24,8 +28,13 @@ export async function HomePage() {
       </div>
       <div className="flex flex-col gap-4">
         <Card className="flex-1">
-          <CardHeader>contacts</CardHeader>
-          <CardContent>contacts</CardContent>
+          <CardHeader>{t('contacts.title')}</CardHeader>
+          <CardContent>
+            <ContactSelector
+              label={t('contacts.title')}
+              actionLabel={t('contacts.open')}
+            />
+          </CardContent>
         </Card>
         <Card>
           <CardHeader>work</CardHeader>
