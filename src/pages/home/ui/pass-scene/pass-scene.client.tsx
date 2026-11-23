@@ -1,11 +1,18 @@
 'use client';
-import { Canvas, extend, useFrame, useLoader, useThree } from '@react-three/fiber';
+import {
+  Canvas,
+  extend,
+  useFrame,
+  useLoader,
+  useThree,
+} from '@react-three/fiber';
 import { Group, MathUtils, TextureLoader } from 'three';
 import { useEffect, useRef } from 'react';
 
 import { PassLighting } from './pass-lighting.client';
 import { PassSleeveGeometry } from './pass-sleeve-geometry';
 import { compileClearSleeve } from './pass-sleeve-transmission';
+import styles from './pass-scene.module.css';
 
 const SleeveGeometry = extend(PassSleeveGeometry);
 
@@ -14,7 +21,7 @@ function PassMesh() {
 
   return (
     <mesh>
-      <boxGeometry args={[1.4, 1.8, 0.02]} />
+      <boxGeometry args={[1.4, 1.8, 0.01]} />
       <meshStandardMaterial attach="material-0" color="#596b80" />
       <meshStandardMaterial attach="material-1" color="#596b80" />
       <meshStandardMaterial attach="material-2" color="#596b80" />
@@ -127,7 +134,10 @@ function PassModel() {
 
 export const PassScene = () => {
   return (
-    <Canvas camera={{ position: [0, 0, 4], fov: 45 }} className='touch-pinch-zoom'>
+    <Canvas
+      camera={{ position: [0, 0, 4], fov: 45 }}
+      className={`${styles.scene} touch-pinch-zoom`}
+    >
       <ambientLight intensity={0.6} />
       <directionalLight intensity={2} position={[3, 4, 5]} />
       <PassLighting />

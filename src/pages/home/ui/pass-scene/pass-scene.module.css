@@ -1,0 +1,19 @@
+.scene {
+  isolation: isolate;
+}
+
+.scene::before {
+  --grid-step: clamp(30px, 7vw, 56px);
+
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-image:
+    radial-gradient(ellipse 2.7px 1px, var(--grid-color) 84%, transparent),
+    radial-gradient(ellipse 1px 2.7px, var(--grid-color) 84%, transparent);
+  background-position: center;
+  background-size: var(--grid-step) var(--grid-step);
+  mask-image: radial-gradient(ellipse farthest-corner, black 53%, #000a 86%, transparent);
+  content: '';
+  pointer-events: none;
+}
