@@ -3,7 +3,8 @@ import { BoxGeometry, MathUtils, Vector3 } from 'three';
 const width = 1.59;
 const height = 1.99;
 const depth = 0.06;
-const radius = 0.025;
+const cornerRadius = 0.08;
+const edgeRadius = 0.01;
 const halfDepth = depth / 2;
 
 const widthSegments = 80;
@@ -111,7 +112,12 @@ function deformationAt(x: number, y: number) {
 }
 
 // Reserve several rows of vertices for the narrow bevel on each axis.
-function roundedAxis(value: number, halfSize: number, bevelShare: number) {
+function roundedAxis(
+  value: number,
+  halfSize: number,
+  radius: number,
+  bevelShare: number,
+) {
   const absolute = Math.abs(value);
   const inner = halfSize - radius;
   const bevelStart = 1 - bevelShare;
@@ -133,24 +139,37 @@ export class PassSleeveGeometry extends BoxGeometry {
     const point = new Vector3();
     const inner = new Vector3();
     const normal = new Vector3();
-    const innerX = width / 2 - radius;
-    const innerY = height / 2 - radius;
-    const innerZ = halfDepth - radius;
+    const radii = new Vector3(cornerRadius, cornerRadius, edgeRadius);
+    const innerX = width / 2 - cornerRadius;
+    const innerY = height / 2 - cornerRadius;
+    const innerZ = halfDepth - edgeRadius;
     const step = 0.001;
 
     for (let index = 0; index < positions.count; index++) {
       point.set(
-        roundedAxis(positions.getX(index), width / 2, 8 / widthSegments),
-        roundedAxis(positions.getY(index), height / 2, 8 / heightSegments),
-        roundedAxis(positions.getZ(index), halfDepth, 3 / 4),
+        roundedAxis(
+          positions.getX(index),
+          width / 2,
+          cornerRadius,
+          8 / widthSegments,
+        ),
+        roundedAxis(
+          positions.getY(index),
+          height / 2,
+          cornerRadius,
+          8 / heightSegments,
+        ),
+        roundedAxis(positions.getZ(index), halfDepth, edgeRadius, 3 / 4),
       );
       inner.set(
         MathUtils.clamp(point.x, -innerX, innerX),
         MathUtils.clamp(point.y, -innerY, innerY),
         MathUtils.clamp(point.z, -innerZ, innerZ),
       );
-      normal.subVectors(point, inner).normalize();
-      point.copy(inner).addScaledVector(normal, radius);
+      // Project onto an ellipsoid so the corners can round without thickening the sleeve.
+      normal.subVectors(point, inner).divide(radii).normalize();
+      point.copy(normal).multiply(radii).add(inner);
+      normal.divide(radii).normalize();
 
       const { x, y, z } = point;
       const deformation = deformationAt(x, y);

@@ -21,13 +21,13 @@ function PassMesh() {
 
   return (
     <mesh>
-      <boxGeometry args={[1.4, 1.8, 0.01]} />
+      <boxGeometry args={[1.4, 1.8, 0.001]} />
       <meshStandardMaterial attach="material-0" color="#596b80" />
       <meshStandardMaterial attach="material-1" color="#596b80" />
       <meshStandardMaterial attach="material-2" color="#596b80" />
       <meshStandardMaterial attach="material-3" color="#596b80" />
       <meshBasicMaterial attach="material-4" map={front} />
-      <meshStandardMaterial attach="material-5" color="#a0b8d4" />
+      <meshStandardMaterial attach="material-5" color="#b6c2ce" />
     </mesh>
   );
 }
@@ -119,7 +119,7 @@ function PassModel() {
         <SleeveGeometry />
         <meshPhysicalMaterial
           iridescence={0.35}
-          iridescenceThicknessMaximum={280}
+          iridescenceThicknessRange={[100, 280]}
           transmission={1}
           opacity={1}
           roughness={0.09}

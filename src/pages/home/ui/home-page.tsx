@@ -7,7 +7,7 @@ export async function HomePage() {
   const t = await getTranslations();
 
   return (
-    <main className="grid lg:grid-cols-[25%_45%_30%] gap-4 lg:px-8 lg:pb-8 px-4 pb-4 h-full">
+    <main className="grid h-full grid-cols-1 gap-4 px-4 pb-4 lg:grid-cols-[minmax(0,30fr)_minmax(0,45fr)_minmax(0,25fr)] lg:px-8 lg:pb-8">
       <div className="flex flex-col gap-4">
         <Card className="flex-1">
           <CardHeader>pet projects</CardHeader>
@@ -27,7 +27,7 @@ export async function HomePage() {
         </Card>
       </div>
       <div className="flex flex-col gap-4">
-        <Card className="flex-1">
+        <Card>
           <CardHeader>{t('contacts.title')}</CardHeader>
           <CardContent>
             <ContactSelector
@@ -36,7 +36,7 @@ export async function HomePage() {
             />
           </CardContent>
         </Card>
-        <Card>
+        <Card className="flex-1">
           <CardHeader>work</CardHeader>
           <CardContent>work</CardContent>
         </Card>
